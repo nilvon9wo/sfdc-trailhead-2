@@ -40,4 +40,8 @@
         <name>standard__Content</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>TH_Charitable</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
