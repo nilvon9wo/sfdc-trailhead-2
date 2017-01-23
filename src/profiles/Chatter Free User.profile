@@ -6,6 +6,11 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>TH_Garage</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__AppLauncher</application>
         <default>false</default>
         <visible>false</visible>
@@ -1323,6 +1328,9 @@
         <layout>UserProvisioningRequest-User Provisioning Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Vehicle__c-Vehicle Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>WorkCoaching-Coaching Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1350,6 +1358,10 @@
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Fundraiser__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Vehicle__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

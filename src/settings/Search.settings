@@ -160,6 +160,12 @@
             <name>User</name>
             <resultsPerPageCount>25</resultsPerPageCount>
         </searchSettingsByObject>
+        <searchSettingsByObject>
+            <enhancedLookupEnabled>false</enhancedLookupEnabled>
+            <lookupAutoCompleteEnabled>false</lookupAutoCompleteEnabled>
+            <name>Vehicle__c</name>
+            <resultsPerPageCount>25</resultsPerPageCount>
+        </searchSettingsByObject>
     </searchSettingsByObject>
     <sidebarAutoCompleteEnabled>true</sidebarAutoCompleteEnabled>
     <sidebarDropDownListEnabled>true</sidebarDropDownListEnabled>

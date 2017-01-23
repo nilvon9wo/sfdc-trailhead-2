@@ -5,6 +5,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>TH_Garage</application>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__AppLauncher</application>
         <visible>false</visible>
     </applicationVisibilities>
@@ -1216,6 +1220,10 @@
     </recordTypeVisibilities>
     <tabSettings>
         <tab>Fundraiser__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Vehicle__c</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
