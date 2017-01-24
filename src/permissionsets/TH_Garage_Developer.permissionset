@@ -1268,6 +1268,10 @@
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>Position_Website__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Position__c</tab>
         <visibility>None</visibility>
     </tabSettings>

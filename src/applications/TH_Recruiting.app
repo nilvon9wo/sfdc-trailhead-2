@@ -7,4 +7,5 @@
     <tab>Job_Application__c</tab>
     <tab>Review__c</tab>
     <tab>Website__c</tab>
+    <tab>Position_Website__c</tab>
 </CustomApplication>

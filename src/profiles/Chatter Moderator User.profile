@@ -1339,6 +1339,9 @@
         <layout>OrderItem-Order Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Position_Website__c-Position Website Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Position__c-Position Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1423,6 +1426,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Job_Application__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Position_Website__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
