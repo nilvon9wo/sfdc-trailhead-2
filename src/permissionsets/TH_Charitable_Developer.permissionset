@@ -1157,6 +1157,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Position__c.Hiring_Manager__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Product2.Description</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1259,11 +1264,27 @@
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>Job_Application__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Position__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Review__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Trail__c</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
         <tab>Vehicle__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Website__c</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
