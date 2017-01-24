@@ -64,6 +64,28 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Maximum_pay__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum pay</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_pay__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum pay</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Name__c</fullName>
         <externalId>false</externalId>
         <label>Name</label>

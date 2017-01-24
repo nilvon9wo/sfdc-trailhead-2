@@ -14,6 +14,14 @@
         <relationshipLabel><!-- Positions --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Maximum pay --></label>
+        <name>Maximum_pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum pay --></label>
+        <name>Minimum_pay__c</name>
+    </fields>
+    <fields>
         <label><!-- Name --></label>
         <name>Name__c</name>
     </fields>

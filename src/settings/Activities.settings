@@ -2,11 +2,11 @@
 <ActivitiesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <allowUsersToRelateMultipleContactsToTasksAndEvents>false</allowUsersToRelateMultipleContactsToTasksAndEvents>
     <enableActivityReminders>true</enableActivityReminders>
-    <enableClickCreateEvents>false</enableClickCreateEvents>
+    <enableClickCreateEvents>true</enableClickCreateEvents>
     <enableDragAndDropScheduling>true</enableDragAndDropScheduling>
     <enableEmailTracking>true</enableEmailTracking>
     <enableGroupTasks>true</enableGroupTasks>
-    <enableListViewScheduling>false</enableListViewScheduling>
+    <enableListViewScheduling>true</enableListViewScheduling>
     <enableLogNote>false</enableLogNote>
     <enableMultidayEvents>true</enableMultidayEvents>
     <enableRecurringEvents>true</enableRecurringEvents>

@@ -33,5 +33,9 @@
             <translation><!-- Warm --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <label><!-- Social Security Number --></label>
+        <name>Social_Security_Number__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
