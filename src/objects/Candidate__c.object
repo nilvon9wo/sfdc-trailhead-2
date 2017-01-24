@@ -54,9 +54,9 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>Candidate_Name__c</fullName>
+        <fullName>Name__c</fullName>
         <externalId>false</externalId>
-        <label>Candidate Name</label>
+        <label>Name</label>
         <length>50</length>
         <required>true</required>
         <trackHistory>false</trackHistory>

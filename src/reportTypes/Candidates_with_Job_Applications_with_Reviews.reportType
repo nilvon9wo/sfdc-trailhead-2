@@ -56,7 +56,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Candidate_Name__c</field>
+            <field>Name__c</field>
             <table>Candidate__c</table>
         </columns>
         <columns>

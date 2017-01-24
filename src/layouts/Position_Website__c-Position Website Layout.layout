@@ -16,7 +16,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Website__c</field>
+                <field>Websites__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

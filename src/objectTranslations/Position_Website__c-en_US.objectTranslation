@@ -15,7 +15,7 @@
     </fields>
     <fields>
         <label><!-- Website --></label>
-        <name>Website__c</name>
+        <name>Websites__c</name>
         <relationshipLabel><!-- Websites --></relationshipLabel>
     </fields>
     <startsWith>Consonant</startsWith>

@@ -9,8 +9,8 @@
         <value>Candidates</value>
     </caseValues>
     <fields>
-        <label><!-- Candidate Name --></label>
-        <name>Candidate_Name__c</name>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
     </fields>
     <fields>
         <help><!-- How well does this candidate fit the job description? --></help>
