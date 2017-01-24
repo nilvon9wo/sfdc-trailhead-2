@@ -42,6 +42,7 @@
     </actionOverrides>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>TH_JobCandidateHelp</customHelpPage>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>People who have applied to a particular position</description>
     <enableActivities>true</enableActivities>

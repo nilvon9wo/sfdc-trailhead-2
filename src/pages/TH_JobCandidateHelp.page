@@ -1,0 +1,8 @@
+<apex:page title="Help for the Candidate Object">
+    <apex:pageBlock title="Help for the Candidate Object">
+        <apex:pageBlockSection columns="1">
+            <apex:outputText >The candidate object is for identifying and tracking individual candidates for job positions.</apex:outputText>
+            <apex:outputText >Sort candidaes by Name, Location, Last Modified, and Prospect Rating.</apex:outputText>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
