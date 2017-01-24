@@ -3,4 +3,6 @@
     <defaultLandingTab>standard-home</defaultLandingTab>
     <label>Park</label>
     <tab>Trail__c</tab>
+    <tab>Campsite__c</tab>
+    <tab>Campsite_Reservation__c</tab>
 </CustomApplication>
