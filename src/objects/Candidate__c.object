@@ -90,6 +90,10 @@
                     <fullName>Cool</fullName>
                     <default>false</default>
                 </value>
+                <value>
+                    <fullName>Manager Favourite</fullName>
+                    <default>false</default>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>

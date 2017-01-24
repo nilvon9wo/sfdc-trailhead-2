@@ -25,6 +25,10 @@
             <translation><!-- Hot --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Manager Favourite</masterLabel>
+            <translation><!-- Manager Favourite --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Warm</masterLabel>
             <translation><!-- Warm --></translation>
         </picklistValues>
