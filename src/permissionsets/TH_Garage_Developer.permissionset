@@ -9,6 +9,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>TH_Park</application>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>TH_Recruiting</application>
         <visible>false</visible>
     </applicationVisibilities>
@@ -1211,6 +1215,21 @@
         <field>Task.WhoId</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Trail__c.Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Trail__c.Distance__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Trail__c.Last_Inspection_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>TH_Garage Developer</label>
     <license>Salesforce</license>
@@ -1237,6 +1256,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Fundraiser__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Trail__c</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
