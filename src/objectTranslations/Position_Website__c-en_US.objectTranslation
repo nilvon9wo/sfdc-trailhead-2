@@ -11,12 +11,12 @@
     <fields>
         <label><!-- Position --></label>
         <name>Position__c</name>
-        <relationshipLabel><!-- Position Websites --></relationshipLabel>
+        <relationshipLabel><!-- Positions --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Website --></label>
         <name>Website__c</name>
-        <relationshipLabel><!-- Position Websites --></relationshipLabel>
+        <relationshipLabel><!-- Websites --></relationshipLabel>
     </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

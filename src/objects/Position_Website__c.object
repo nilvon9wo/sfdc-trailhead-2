@@ -56,7 +56,7 @@
         <externalId>false</externalId>
         <label>Position</label>
         <referenceTo>Position__c</referenceTo>
-        <relationshipLabel>Position Websites</relationshipLabel>
+        <relationshipLabel>Positions</relationshipLabel>
         <relationshipName>Position_Websites</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
@@ -70,7 +70,7 @@
         <externalId>false</externalId>
         <label>Website</label>
         <referenceTo>Website__c</referenceTo>
-        <relationshipLabel>Position Websites</relationshipLabel>
+        <relationshipLabel>Websites</relationshipLabel>
         <relationshipName>Position_Websites</relationshipName>
         <relationshipOrder>1</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
