@@ -16,6 +16,11 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>TH_Project_Tracker</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>TH_Recruiting</application>
         <default>false</default>
         <visible>false</visible>
@@ -1399,6 +1404,9 @@
         <layout>Product2-Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Project__c-Project Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Review__c-Review Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1505,6 +1513,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Position__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Project__c</tab>
         <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>

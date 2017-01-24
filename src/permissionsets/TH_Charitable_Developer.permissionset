@@ -13,6 +13,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>TH_Project_Tracker</application>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>TH_Recruiting</application>
         <visible>false</visible>
     </applicationVisibilities>
@@ -1316,6 +1320,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Position__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Project__c</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
