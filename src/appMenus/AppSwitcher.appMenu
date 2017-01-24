@@ -48,4 +48,8 @@
         <name>TH_Garage</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>TH_Recruiting</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
