@@ -226,6 +226,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYF</field>
+            <label>Big Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w59</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -236,6 +240,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYA</field>
+            <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
@@ -283,9 +291,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y000008gAYF</field>
             <field>00N0Y00000A7w59</field>
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
+            <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
             <field>00N0Y00000A7w5D</field>
@@ -443,6 +453,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYF</field>
+            <label>Big Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w59</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -453,6 +467,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYA</field>
+            <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
@@ -500,9 +518,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y000008gAYF</field>
             <field>00N0Y00000A7w59</field>
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
+            <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
             <field>00N0Y00000A7w5D</field>
@@ -660,6 +680,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYF</field>
+            <label>Big Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w59</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -670,6 +694,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYA</field>
+            <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
@@ -717,9 +745,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y000008gAYF</field>
             <field>00N0Y00000A7w59</field>
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
+            <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
             <field>00N0Y00000A7w5D</field>
@@ -877,6 +907,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYF</field>
+            <label>Big Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w59</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -887,6 +921,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYA</field>
+            <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
@@ -934,9 +972,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y000008gAYF</field>
             <field>00N0Y00000A7w59</field>
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
+            <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
             <field>00N0Y00000A7w5D</field>
@@ -1102,6 +1142,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYF</field>
+            <label>Big Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w59</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1112,6 +1156,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYA</field>
+            <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
@@ -1161,9 +1209,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N0Y000008gAYF</field>
             <field>00N0Y00000A7w59</field>
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
+            <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
             <field>00N0Y00000A7w5D</field>

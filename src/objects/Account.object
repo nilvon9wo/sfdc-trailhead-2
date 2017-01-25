@@ -78,6 +78,16 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Account_Website__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;http://www.VeryImportantWebsite.com&quot;, &quot;Very Important Website&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Website</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Active__c</fullName>
         <externalId>false</externalId>
         <label>Active</label>

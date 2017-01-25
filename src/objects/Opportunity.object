@@ -56,6 +56,18 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Big_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND( 
+    Account.NumberOfEmployees &gt; 1000, 
+    Amount &gt; 10000
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Big Opportunity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>CampaignId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -126,6 +138,19 @@
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Discounted_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>ROUND(Amount - (Amount * 0.12), 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Discounted Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>ExpectedRevenue</fullName>
