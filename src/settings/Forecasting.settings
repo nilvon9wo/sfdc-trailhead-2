@@ -230,6 +230,10 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008g9Kb</field>
+            <label>Days to Close</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -280,6 +284,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N0Y00000A7w59</field>
+            <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
@@ -442,6 +447,10 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008g9Kb</field>
+            <label>Days to Close</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -492,6 +501,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N0Y00000A7w59</field>
+            <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
@@ -654,6 +664,10 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008g9Kb</field>
+            <label>Days to Close</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -704,6 +718,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N0Y00000A7w59</field>
+            <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
@@ -866,6 +881,10 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008g9Kb</field>
+            <label>Days to Close</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -916,6 +935,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N0Y00000A7w59</field>
+            <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>
@@ -1086,6 +1106,10 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008g9Kb</field>
+            <label>Days to Close</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5A</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -1138,6 +1162,7 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N0Y00000A7w59</field>
+            <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y00000A7w5C</field>

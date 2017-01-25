@@ -84,6 +84,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Days_to_Close__c</fullName>
+        <externalId>false</externalId>
+        <formula>CloseDate - TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days to Close</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>DeliveryInstallationStatus__c</fullName>
         <externalId>false</externalId>
         <label>Delivery/Installation Status</label>
