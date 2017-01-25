@@ -41,6 +41,10 @@
                 <behavior>Readonly</behavior>
                 <field>Date_First_Opportunity_Created__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Potential_Value__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
