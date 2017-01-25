@@ -49,6 +49,14 @@
                 <behavior>Readonly</behavior>
                 <field>Big_Opportunity__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Products_Grand_Total__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Minimum_List_Price__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

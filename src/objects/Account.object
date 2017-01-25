@@ -151,6 +151,15 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Date_First_Opportunity_Created__c</fullName>
+        <externalId>false</externalId>
+        <label>Date First Opportunity Created</label>
+        <summarizedField>Opportunity.CreatedDate</summarizedField>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>

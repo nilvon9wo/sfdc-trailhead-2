@@ -179,6 +179,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Minimum_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum List Price</label>
+        <summarizedField>OpportunityLineItem.ListPrice</summarizedField>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -214,6 +224,16 @@
         <fullName>Probability</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Products_Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Products Grand Total</label>
+        <summarizedField>OpportunityLineItem.UnitPrice</summarizedField>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
     </fields>
     <fields>
         <fullName>StageName</fullName>

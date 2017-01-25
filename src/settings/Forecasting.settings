@@ -250,8 +250,16 @@
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYj</field>
+            <label>Minimum List Price</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5C</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYe</field>
+            <label>Products Grand Total</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5D</field>
@@ -297,7 +305,9 @@
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
+            <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
+            <field>00N0Y000008gAYe</field>
             <field>00N0Y00000A7w5D</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -477,8 +487,16 @@
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYj</field>
+            <label>Minimum List Price</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5C</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYe</field>
+            <label>Products Grand Total</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5D</field>
@@ -524,7 +542,9 @@
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
+            <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
+            <field>00N0Y000008gAYe</field>
             <field>00N0Y00000A7w5D</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -704,8 +724,16 @@
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYj</field>
+            <label>Minimum List Price</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5C</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYe</field>
+            <label>Products Grand Total</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5D</field>
@@ -751,7 +779,9 @@
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
+            <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
+            <field>00N0Y000008gAYe</field>
             <field>00N0Y00000A7w5D</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -931,8 +961,16 @@
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYj</field>
+            <label>Minimum List Price</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5C</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYe</field>
+            <label>Products Grand Total</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5D</field>
@@ -978,7 +1016,9 @@
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
+            <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
+            <field>00N0Y000008gAYe</field>
             <field>00N0Y00000A7w5D</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
@@ -1166,8 +1206,16 @@
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYj</field>
+            <label>Minimum List Price</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5C</field>
             <label>Order Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gAYe</field>
+            <label>Products Grand Total</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5D</field>
@@ -1215,7 +1263,9 @@
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
             <field>00N0Y00000A7w5B</field>
+            <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
+            <field>00N0Y000008gAYe</field>
             <field>00N0Y00000A7w5D</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
