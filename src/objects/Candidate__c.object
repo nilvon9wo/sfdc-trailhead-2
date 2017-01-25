@@ -99,6 +99,28 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Salary_Max__c</fullName>
+        <externalId>false</externalId>
+        <label>Salary Max</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Salary_Min__c</fullName>
+        <externalId>false</externalId>
+        <label>Salary Min</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Social_Security_Number__c</fullName>
         <externalId>false</externalId>
         <label>Social Security Number</label>
@@ -124,4 +146,12 @@
     <pluralLabel>Candidates</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Salary_Range_Validation</fullName>
+        <active>true</active>
+        <description>Validates that the range between two custom fields, Salary Min and Salary Max, is no greater than $20,000.</description>
+        <errorConditionFormula>(Salary_Max__c - Salary_Min__c) &gt; 2000</errorConditionFormula>
+        <errorDisplayField>Salary_Max__c</errorDisplayField>
+        <errorMessage>Salary range must be within $20,000.  Adjust the Salary Max or Salary Min values.</errorMessage>
+    </validationRules>
 </CustomObject>

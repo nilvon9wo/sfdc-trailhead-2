@@ -34,8 +34,20 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Salary Max --></label>
+        <name>Salary_Max__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary Min --></label>
+        <name>Salary_Min__c</name>
+    </fields>
+    <fields>
         <label><!-- Social Security Number --></label>
         <name>Social_Security_Number__c</name>
     </fields>
     <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Salary range must be within $20,000.  Adjust the Salary Max or Salary Min values. --></errorMessage>
+        <name>Salary_Range_Validation</name>
+    </validationRules>
 </CustomObjectTranslation>
