@@ -306,4 +306,14 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Contact_must_be_in_Account_Zip_Code</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+    NOT (ISBLANK(Account.Id)),
+    NOT(MailingPostalCode  =  Account.ShippingPostalCode) 
+)</errorConditionFormula>
+        <errorDisplayField>MailingPostalCode</errorDisplayField>
+        <errorMessage>Contacts with Accounts must have the same mailing postal code and shipping postal code.</errorMessage>
+    </validationRules>
 </CustomObject>
