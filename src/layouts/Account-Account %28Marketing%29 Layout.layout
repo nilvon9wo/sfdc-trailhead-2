@@ -33,6 +33,10 @@
                 <behavior>Readonly</behavior>
                 <field>Account_Website__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Sum_of_Opportunities__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
