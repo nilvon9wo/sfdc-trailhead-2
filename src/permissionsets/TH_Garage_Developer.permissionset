@@ -1289,6 +1289,11 @@
         <field>Trail__c.Last_Inspection_Date__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.Unique_Users__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>TH_Garage Developer</label>
     <license>Salesforce</license>
