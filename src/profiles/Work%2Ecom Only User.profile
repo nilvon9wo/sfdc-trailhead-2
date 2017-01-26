@@ -1425,6 +1425,9 @@
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Fundraiser__c-Fundraiser Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
