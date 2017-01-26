@@ -486,13 +486,14 @@ BillingCountry)))</errorConditionFormula>
         <active>true</active>
         <description>Validates a custom field called Web Site to ensure its last four characters are in an an explicit set of valid website extensions.</description>
         <errorConditionFormula>AND (
-    RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.COM&quot;,
-    RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.com&quot;,
-    RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.ORG&quot;,
-    RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.org&quot;,
-    RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.NET&quot;,
-    RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.net&quot;
-)</errorConditionFormula>
+        NOT(ISBLANK(Web_Site__c)),
+        RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.COM&quot;,
+        RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.com&quot;,
+        RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.ORG&quot;,
+        RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.org&quot;,
+        RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.NET&quot;,
+        RIGHT ( Web_Site__c, 4) &lt;&gt; &quot;.net&quot;
+    )</errorConditionFormula>
         <errorDisplayField>Web_Site__c</errorDisplayField>
         <errorMessage>Web Site must have an extension of .com, .org, or .net.</errorMessage>
     </validationRules>
