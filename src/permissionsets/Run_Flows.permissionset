@@ -1361,6 +1361,10 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Run Flows</label>
     <pageAccesses>
+        <apexPage>FlowPage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>TH_JobCandidateHelp</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

@@ -1563,6 +1563,10 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
+        <apexPage>FlowPage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>TH_JobCandidateHelp</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
