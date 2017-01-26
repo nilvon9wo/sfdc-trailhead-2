@@ -18,4 +18,5 @@
     <tab>standard-Product2</tab>
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
+    <tab>Quick_Account</tab>
 </CustomApplication>

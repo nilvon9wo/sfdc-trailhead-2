@@ -1373,6 +1373,10 @@
         <apexPage>TH_JobCandidateHelp</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>TH_QuickAccount</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <recordTypeVisibilities>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
@@ -1407,6 +1411,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Project__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Quick_Account</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
