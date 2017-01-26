@@ -140,6 +140,40 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Discount_Percent_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Percent Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not Approved</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Discount_Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Percent</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
         <fullName>Discounted_Amount__c</fullName>
         <externalId>false</externalId>
         <formula>ROUND(Amount - (Amount * 0.12), 2)</formula>

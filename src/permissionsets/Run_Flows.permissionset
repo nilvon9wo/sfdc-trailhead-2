@@ -1045,6 +1045,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Discount_Percent_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Discounted_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>

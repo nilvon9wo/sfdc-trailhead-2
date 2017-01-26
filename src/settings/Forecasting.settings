@@ -246,6 +246,14 @@
             <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGEw</field>
+            <label>Discount Percent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGF6</field>
+            <label>Discount Percent Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -304,6 +312,8 @@
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
+            <field>00N0Y000008gGEw</field>
+            <field>00N0Y000008gGF6</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
@@ -483,6 +493,14 @@
             <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGEw</field>
+            <label>Discount Percent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGF6</field>
+            <label>Discount Percent Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -541,6 +559,8 @@
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
+            <field>00N0Y000008gGEw</field>
+            <field>00N0Y000008gGF6</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
@@ -720,6 +740,14 @@
             <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGEw</field>
+            <label>Discount Percent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGF6</field>
+            <label>Discount Percent Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -778,6 +806,8 @@
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
+            <field>00N0Y000008gGEw</field>
+            <field>00N0Y000008gGF6</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
@@ -957,6 +987,14 @@
             <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGEw</field>
+            <label>Discount Percent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGF6</field>
+            <label>Discount Percent Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1015,6 +1053,8 @@
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
+            <field>00N0Y000008gGEw</field>
+            <field>00N0Y000008gGF6</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
@@ -1202,6 +1242,14 @@
             <label>Discounted Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGEw</field>
+            <label>Discount Percent</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N0Y000008gGF6</field>
+            <label>Discount Percent Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N0Y00000A7w5B</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1262,6 +1310,8 @@
             <field>00N0Y000008g9Kb</field>
             <field>00N0Y00000A7w5A</field>
             <field>00N0Y000008gAYA</field>
+            <field>00N0Y000008gGEw</field>
+            <field>00N0Y000008gGF6</field>
             <field>00N0Y00000A7w5B</field>
             <field>00N0Y000008gAYj</field>
             <field>00N0Y00000A7w5C</field>
