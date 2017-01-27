@@ -64,7 +64,15 @@
         <actionName>WebsiteHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>AccountCompact</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>AccountCompact</fullName>
+        <fields>Name</fields>
+        <fields>Site</fields>
+        <fields>Phone</fields>
+        <fields>AccountNumber</fields>
+        <label>AccountCompact</label>
+    </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <externalSharingModel>ReadWrite</externalSharingModel>

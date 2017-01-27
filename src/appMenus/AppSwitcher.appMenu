@@ -60,4 +60,8 @@
         <name>TH_Project_Tracker</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>standard__LightningSales</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
