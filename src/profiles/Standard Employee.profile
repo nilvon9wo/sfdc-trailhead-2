@@ -91,6 +91,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>DB_AccountSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DB_CampaignSelector</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -104,6 +108,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>DB_MultiItemSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_ProductSelector</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>

@@ -27,4 +27,12 @@ public class DB_ContactSelector extends fflib_SObjectSelector {
     	];
     	return (List<Contact>) findListList[0];
     } 
+    
+    public List<Contact> findEmail(String email) {
+    	List<List<sObject>> findListList = [
+    		FIND :email IN EMAIL FIELDS
+    		RETURNING Contact
+    	];
+    	return (List<Contact>) findListList[0];
+    } 
 }

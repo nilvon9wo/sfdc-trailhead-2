@@ -12,4 +12,18 @@ public class DB_MultiItemSelector {
     		FeedItem.sObjectType => findListList[2]
 		};
 	}
+	
+    public Map<Schema.SObjectType,List<SObject>> findFirstPlaceInFirstNetwork() {
+		String term = 'first place';
+    	List<List<sObject>> findListList = [
+    		FIND :term 
+    		RETURNING User(id, name),
+    			FeedItem(id, parentId WHERE createdDate = THIS_YEAR ORDER BY createdDate DESC)
+    		WITH NETWORK = '00000000000001'
+    	];
+		return new Map<Schema.SObjectType,List<SObject>>{
+    		User.sObjectType => findListList[0],
+    		FeedItem.sObjectType => findListList[1]
+		};
+    } 
 }
