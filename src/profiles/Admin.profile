@@ -1844,6 +1844,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>StationCheck</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>TH_JobCandidateHelp</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
