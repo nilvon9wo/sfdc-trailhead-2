@@ -76,6 +76,10 @@
         <apexClass>TH_EmailSendingService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>TH_FlightSystemSubListVFComponentCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <description>Permission Set generated for access to custom object Vehicle for the app Garage</description>
     <fieldPermissions>
         <editable>false</editable>

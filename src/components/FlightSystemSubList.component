@@ -1,12 +1,10 @@
-<apex:component >
-    <apex:attribute name="partSingular" type="String" required="true" description="The part the section is dedicated to, singular form" />
-    <apex:attribute name="partPlural" type="String" required="true" description="The part the section is dedicated to, plural form" />
-	<apex:pageBlockSection title="{!partPlural}">
-                <apex:inputCheckbox immediate="true"/>{!partSingular} 1
-                <apex:inputCheckbox immediate="true"/>{!partSingular} 2
-                <apex:inputCheckbox immediate="true"/>{!partSingular} 3
-                <apex:inputCheckbox immediate="true"/>{!partSingular} 4
-                <apex:inputCheckbox immediate="true"/>{!partSingular} 5
-                <apex:inputCheckbox immediate="true"/>{!partSingular} 6
+<apex:component controller="TH_FlightSystemSubListVFComponentCtrl">
+    <apex:attribute name="sectionTitle" type="String" required="true" description="The part the section is dedicated to, plural form" />
+    <apex:attribute name="part" type="String" required="true" description="The part the section is dedicated to, singular form" assignTo="{!partName}"/>
+    <apex:attribute name="quantity" type="Integer" required="true" description="The part the section is dedicated to, singular form" assignTo="{!partQuantity}"/>
+	<apex:pageBlockSection title="{!sectionTitle}">
+        <apex:repeat value="{!pieceList}" var="piece" >
+            <apex:inputCheckbox immediate="true"/>{!piece}
+        </apex:repeat>
     </apex:pageBlockSection>
 </apex:component>

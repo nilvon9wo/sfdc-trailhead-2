@@ -94,6 +94,10 @@
         <apexClass>TH_EmailSendingService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>TH_FlightSystemSubListVFComponentCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>

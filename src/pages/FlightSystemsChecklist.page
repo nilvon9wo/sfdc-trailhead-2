@@ -2,8 +2,8 @@
     <h1>Checklist</h1>
     <apex:form id="engineReadinessChecklist">
         <apex:pageBlock title="Flight Systems Checklist">
-            <c:FlightSystemSubList partSingular="Engine" partPlural="Engines" />
-            <c:FlightSystemSubList partSingular="Tank" partPlural="Fuel Tanks" />
+            <c:FlightSystemSubList sectionTitle="Engines" part="Engine" quantity="6"/> 
+            <c:FlightSystemSubList sectionTitle="Fuel Tanks" part="Tank" quantity="6" />
             <apex:pageBlockButtons >
                 <apex:commandButton value="Save" action="{!save}"/>
             </apex:pageBlockButtons>

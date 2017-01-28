@@ -76,6 +76,10 @@
         <apexClass>TH_EmailSendingService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>TH_FlightSystemSubListVFComponentCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <description>Permission Set generated for access to custom object Fundraiser for the app TH_Charitable</description>
     <fieldPermissions>
         <editable>false</editable>

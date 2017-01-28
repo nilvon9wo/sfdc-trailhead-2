@@ -76,6 +76,10 @@
         <apexClass>TH_EmailSendingService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>TH_FlightSystemSubListVFComponentCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
