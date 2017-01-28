@@ -72,6 +72,10 @@
         <application>standard__Work</application>
         <visible>false</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>TH_EmailMissionSpecialist</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <description>Permission Set generated for access to custom object Fundraiser for the app TH_Charitable</description>
     <fieldPermissions>
         <editable>false</editable>
