@@ -91,6 +91,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>DB_CampaignSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DB_ContactSelector</apexClass>
         <enabled>false</enabled>
     </classAccesses>
