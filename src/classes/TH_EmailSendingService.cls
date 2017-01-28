@@ -1,4 +1,4 @@
-public class TH_EmailMissionSpecialist {
+public class TH_EmailSendingService {
     public Boolean sendMail(String address, String subject, String body) {
         Messaging.SingleEmailMessage mail = createEmailMessage(address, subject, body);
         return this.inspectResults(

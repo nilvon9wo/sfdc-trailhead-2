@@ -91,7 +91,7 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>TH_EmailMissionSpecialist</apexClass>
+        <apexClass>TH_EmailSendingService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
