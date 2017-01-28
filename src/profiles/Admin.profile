@@ -1832,6 +1832,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
+        <apexPage>FlightSystemsChecklist</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>FlowPage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
