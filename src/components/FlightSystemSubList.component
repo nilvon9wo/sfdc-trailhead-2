@@ -1,0 +1,12 @@
+<apex:component >
+    <apex:attribute name="partSingular" type="String" required="true" description="The part the section is dedicated to, singular form" />
+    <apex:attribute name="partPlural" type="String" required="true" description="The part the section is dedicated to, plural form" />
+	<apex:pageBlockSection title="{!partPlural}">
+                <apex:inputCheckbox immediate="true"/>{!partSingular} 1
+                <apex:inputCheckbox immediate="true"/>{!partSingular} 2
+                <apex:inputCheckbox immediate="true"/>{!partSingular} 3
+                <apex:inputCheckbox immediate="true"/>{!partSingular} 4
+                <apex:inputCheckbox immediate="true"/>{!partSingular} 5
+                <apex:inputCheckbox immediate="true"/>{!partSingular} 6
+    </apex:pageBlockSection>
+</apex:component>
