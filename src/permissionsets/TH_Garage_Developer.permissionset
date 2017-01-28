@@ -81,6 +81,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DB_MerchandiseSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DB_MultiItemSelector</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1614,6 +1618,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Job_Application__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Merchandise__c</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>

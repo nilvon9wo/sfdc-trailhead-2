@@ -19,4 +19,5 @@
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
     <tab>Quick_Account</tab>
+    <tab>Merchandise__c</tab>
 </CustomApplication>
