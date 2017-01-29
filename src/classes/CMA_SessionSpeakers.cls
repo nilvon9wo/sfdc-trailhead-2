@@ -1,5 +1,5 @@
 public class CMA_SessionSpeakers {
-	DB_SessionSpeakerSelector sessionSpeakerSelector;
+	DB_SessionSpeakerSelector sessionSpeakerSelector; 
 	DB_SessionSelector sessionSelector; 
 	List<Session_Speaker__c> sessionSpeakerList;
 	UTIL_SObjectHelper sObjectHelper;
