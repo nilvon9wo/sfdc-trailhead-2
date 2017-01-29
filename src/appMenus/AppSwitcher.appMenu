@@ -64,4 +64,8 @@
         <name>standard__LightningSales</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Conference_Management_App</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
