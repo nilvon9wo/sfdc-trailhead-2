@@ -1896,6 +1896,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SpeakerForm</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>StationCheck</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

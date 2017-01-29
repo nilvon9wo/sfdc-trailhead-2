@@ -2180,6 +2180,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SpeakerForm</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>StationCheck</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
