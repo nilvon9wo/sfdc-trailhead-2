@@ -1,0 +1,10 @@
+<apex:page sidebar="false" showheader="false">
+    <head>
+        <apex:stylesheet value="{!URLFOR($Resource.hotel_map_css)}" />
+        <apex:includeScript value="https://maps.googleapis.com/maps/api/js?sensor=false"/>    
+        <apex:includeScript value="{!URLFOR($Resource.hotel_map_js)}"/>
+    </head>
+    <body>
+        <div id="map-canvas"/>
+    </body>
+</apex:page>

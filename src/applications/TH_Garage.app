@@ -7,4 +7,5 @@
     <tab>Vehicle__c</tab>
     <tab>standard-report</tab>
     <tab>standard-Dashboard</tab>
+    <tab>Hotel__c</tab>
 </CustomApplication>

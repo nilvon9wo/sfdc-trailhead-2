@@ -5,4 +5,5 @@
     <tab>Session__c</tab>
     <tab>Speaker__c</tab>
     <tab>Session_Speaker__c</tab>
+    <tab>Hotel__c</tab>
 </CustomApplication>
