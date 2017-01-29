@@ -25,6 +25,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>Trailblazer</application>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__AppLauncher</application>
         <visible>false</visible>
     </applicationVisibilities>
@@ -1837,6 +1841,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Vehicle__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Waypoint__c</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
