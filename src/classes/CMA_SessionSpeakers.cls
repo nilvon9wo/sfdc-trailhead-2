@@ -1,6 +1,6 @@
 public class CMA_SessionSpeakers {
 	DB_SessionSpeakerSelector sessionSpeakerSelector;
-	DB_SessionSelector sessionSelector;
+	DB_SessionSelector sessionSelector; 
 	List<Session_Speaker__c> sessionSpeakerList;
 	UTIL_SObjectHelper sObjectHelper;
 
@@ -15,23 +15,20 @@ public class CMA_SessionSpeakers {
 		this.sessionSelector = sessionSelector;
 		this.sObjectHelper = sObjectHelper;
 	}
-	
+	 
 	public CMA_SessionSpeakers(List<Session_Speaker__c> sessionSpeakerList) {
 		this(
-			sessionSpeakerList, 
+			sessionSpeakerList,  
 			new DB_SessionSpeakerSelector(), 
 			new DB_SessionSelector(), 
-			new UTIL_SObjectHelper()
+			new UTIL_SObjectHelper() 
 		); 
 	}
 	
     public Boolean sendConfirmationEmails() {
 		List<Id> sessionSpeakerIdList = sObjectHelper.collectIds(this.sessionSpeakerList);
 		List<Session_Speaker__c> sessionSpeakerList = sessionSpeakerSelector.selectById(sessionSpeakerIdList);
-		
-		CMA_SendConfirmationEmailStrategy sendConfirmaion = new CMA_SendConfirmationEmailStrategy();
-		sendConfirmaion.execute(sessionSpeakerList);
-    	return sendConfirmaion.getResult();
+		return (new CMA_SendConfirmationEmailsStrategy()).execute(sessionSpeakerList);
     } 
     
     public Boolean rejectDoubleBooking() {

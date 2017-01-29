@@ -100,6 +100,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CMA_SendConfirmationEmailsStrategy</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CMA_SessionSpeakers</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -161,6 +165,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>UTIL_IfPopulatedListStrategyInterface</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>UTIL_IfPopulatedStringStrategy</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>UTIL_IfPopulatedStringStrategyInterface</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
