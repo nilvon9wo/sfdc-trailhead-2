@@ -1,10 +1,4 @@
 public class TRIG_SessionSpeakerTriggerHandler extends fflib_SObjectDomain {
-
-	static fflib_SObjectUnitOfWork unitOfWork = new fflib_SObjectUnitOfWork( 
-		new Schema.SObjectType[]{ 
-		}  
-	); 
-
 	List<Session_Speaker__c> sessionSpeakerList;
 	CMA_SessionSpeakers sessionSpeakers;
 	
@@ -15,7 +9,7 @@ public class TRIG_SessionSpeakerTriggerHandler extends fflib_SObjectDomain {
 	}
  
 	public TRIG_SessionSpeakerTriggerHandler(List<Session_Speaker__c> sessionSpeakerList) {
-		this(sessionSpeakerList, new CMA_SessionSpeakers(sessionSpeakerList, unitOfWork));
+		this(sessionSpeakerList, new CMA_SessionSpeakers(sessionSpeakerList));
 	}
 	
 	public class Constructor implements fflib_SObjectDomain.IConstructable {
@@ -29,5 +23,14 @@ public class TRIG_SessionSpeakerTriggerHandler extends fflib_SObjectDomain {
     public override void onAfterInsert() {
     	sessionSpeakers.sendConfirmationEmails(); 
     }
+    
+    public override void onValidate() {
+    //	sessionSpeakers.rejectDoubleBooking(); 
+    }
+    
+    public override void onValidate(Map<Id,SObject> existingAccountMap) {
+    	sessionSpeakers.rejectDoubleBooking(); 
+    }
+    
 
 }
