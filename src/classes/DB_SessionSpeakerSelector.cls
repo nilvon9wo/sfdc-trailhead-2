@@ -21,20 +21,11 @@ public class DB_SessionSpeakerSelector extends fflib_SObjectSelector {
     public List<Session_Speaker__c> selectByDetails(Set<Id> idSet) {
         fflib_QueryFactory sessionSpeakerQueryFactory = newQueryFactory();
 
-/*        
-        fflib_QueryFactory sessionQueryFactory = new DB_SessionSelector()
-                .addQueryFactorySubselect(sessionSpeakerQueryFactory);
-        fflib_QueryFactory speakerQueryFactory = new DB_SpeakerSelector()
-                .addQueryFactorySubselect(sessionSpeakerQueryFactory);
-*/
 		new DB_SessionSelector().configureQueryFactoryFields(sessionSpeakerQueryFactory, 'Session__c');
 		new DB_SpeakerSelector().configureQueryFactoryFields(sessionSpeakerQueryFactory, 'Speaker__c');
-                
 
         return (List<Session_Speaker__c>) Database.query(
                 sessionSpeakerQueryFactory.setCondition('id IN :idSet').toSOQL()
         );
     }  
-    
-    
 }
