@@ -1,4 +1,4 @@
-<apex:page standardController="Speaker__c">
+<apex:page standardController="Speaker__c" extensions="SpeakerVFCtrlExtension">
 <apex:form >
     <apex:pageBlock title="Edit Speaker">
         <apex:pageBlockSection columns="1">
@@ -8,7 +8,9 @@
         </apex:pageBlockSection>
         <apex:pageBlockButtons >
             <apex:commandButton action="{!save}" value="Save" />
+            <apex:commandButton action="{!increment}" value="Increment" />            
         </apex:pageBlockButtons>
     </apex:pageBlock>
+    {!counter}
 </apex:form>
 </apex:page>
