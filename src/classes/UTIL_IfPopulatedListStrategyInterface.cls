@@ -1,5 +1,5 @@
 public interface UTIL_IfPopulatedListStrategyInterface {
-	void doIfPopulated(List<Object> listToCheck);	
-	void doIfEmpty();
-	void execute();    
+	Boolean doIfPopulated(List<Object> listToCheck);	
+	Boolean doIfEmpty(); 
+	Boolean execute(List<Object> listToCheck);    
 }

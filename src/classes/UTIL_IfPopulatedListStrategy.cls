@@ -1,13 +1,13 @@
-public abstract class UTIL_IfPopulatedListStrategy { 
-	public void execute(List<Object> listToCheck) { 
-		if (listToCheck == null || listToCheck.size() == 0) {
-			doIfEmpty();
+public abstract class UTIL_IfPopulatedListStrategy implements UTIL_IfPopulatedListStrategyInterface { 
+	public Boolean execute(List<Object> listToCheck) { 
+		if (listToCheck == null || listToCheck.size() == 0) { 
+			return this.doIfEmpty(); 
 		}
 		else {
-			doIfPopulated(listToCheck);
+			return this.doIfPopulated(listToCheck);
 		}
 	}    
 
-	abstract void doIfPopulated(List<Object> listToCheck); 	
-	abstract void doIfEmpty();
+	abstract Boolean doIfPopulated(List<Object> listToCheck); 	
+	abstract Boolean doIfEmpty();
 }
