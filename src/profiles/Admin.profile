@@ -208,7 +208,7 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>TestRejectDoubleBooking</apexClass>
+        <apexClass>TRIG_SessionSpeakerTriggerHandlerIntTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

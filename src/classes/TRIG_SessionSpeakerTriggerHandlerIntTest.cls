@@ -1,5 +1,5 @@
 @isTest
-public class TestRejectDoubleBooking {
+public class TRIG_SessionSpeakerTriggerHandlerIntTest {
     private static final User TestRunner = TEST_RunAsUserFactory.create();
 
 	static testMethod void testSingleBooking() {
