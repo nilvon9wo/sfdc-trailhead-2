@@ -16,13 +16,15 @@ public class CMA_SendConfirmationEmailStrategy extends UTIL_IfPopulatedListStrat
      		Speaker__c speaker = sessionSpeaker.speaker__r;
      		Session__c session = sessionSpeaker.session__r;
      		String address = speaker.email__c;
-     		String subject = 'Speaker Confirmation';
-     		String message = 'Dear ' + speaker.first_name__c  
-     			+ ',\nYour session "' + session.name
-     			+ '" on ' + session.session_date__c 
-     			+ 'is confirmed.\n\n'
-     			+ 'Thanks for speaking at the conference!';
-     		this.result &= emailManager.send(address, subject, message);
+     		if (!String.isBlank(address)) {
+	     		String subject = 'Speaker Confirmation';
+	     		String message = 'Dear ' + speaker.first_name__c  
+	     			+ ',\nYour session "' + session.name
+	     			+ '" on ' + session.session_date__c 
+	     			+ 'is confirmed.\n\n'
+	     			+ 'Thanks for speaking at the conference!';
+	     		this.result &= emailManager.send(address, subject, message);
+     		}
      	}
      }
      
