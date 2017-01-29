@@ -383,11 +383,6 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <listViews>
-        <fullName>AllAccounts</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Accounts</label>
-    </listViews>
-    <listViews>
         <fullName>MyAccounts</fullName>
         <filterScope>Mine</filterScope>
         <label>My Accounts</label>
@@ -411,6 +406,13 @@
             <value>THIS_WEEK</value>
         </filters>
         <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>OldestAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>Oldest Accounts</label>
     </listViews>
     <listViews>
         <fullName>PlatinumandGoldSLACustomers</fullName>
