@@ -100,6 +100,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CMA_EmailManager</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CMA_HotelRemoteSelector</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CMA_SendConfirmationEmailStrategy</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -109,6 +117,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>CMA_SessionSpeakers</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CMA_SpeakerVFCtrlExtension</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -149,18 +161,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>DB_SpeakerSelector</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>EmailManager</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>HotelRemoter</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SpeakerControllerExtension</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

@@ -1,6 +1,4 @@
 public class CMA_SendConfirmationEmailsStrategy extends UTIL_IfPopulatedListStrategy {
-	EmailManager emailManager;
-	      
      public Boolean doIfPopulated(List<Object> speakerSessionList) {
 		Boolean result = true;
      	for (Session_Speaker__c sessionSpeaker: (List<Session_Speaker__c>) speakerSessionList) {
@@ -8,7 +6,7 @@ public class CMA_SendConfirmationEmailsStrategy extends UTIL_IfPopulatedListStra
      		
      		CMA_SendConfirmationEmailStrategy sendConfirmation 
      			= new CMA_SendConfirmationEmailStrategy(speaker, sessionSpeaker.session__r);
-     			
+     			 
      		result &= sendConfirmation.execute(speaker.email__c);
      	}
      	return result;

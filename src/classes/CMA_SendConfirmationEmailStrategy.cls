@@ -1,16 +1,16 @@
 public class CMA_SendConfirmationEmailStrategy extends UTIL_IfPopulatedStrategy {
-	EmailManager emailManager;
+	CMA_EmailManager emailManager;
 	Speaker__c speaker;  
-	Session__c session;  
+	Session__c session;   
  
-	public CMA_SendConfirmationEmailStrategy (Speaker__c speaker, Session__c session, EmailManager emailManager) {
+	public CMA_SendConfirmationEmailStrategy (Speaker__c speaker, Session__c session, CMA_EmailManager emailManager) {
 		this.speaker = speaker;
 		this.session = session;
 		this.emailManager = emailManager;
 	} 
 
 	public CMA_SendConfirmationEmailStrategy (Speaker__c speaker, Session__c session) {
-		this(speaker, session, new EmailManager());
+		this(speaker, session, new CMA_EmailManager());
 	}
 	
      public Boolean doIfPopulated(Object emailAddress) {
@@ -25,5 +25,5 @@ public class CMA_SendConfirmationEmailStrategy extends UTIL_IfPopulatedStrategy 
      
      public Boolean doIfEmpty() { 
      	return true;
-     }
+     } 
 }

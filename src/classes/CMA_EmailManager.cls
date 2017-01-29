@@ -16,4 +16,4 @@ public with sharing class CMA_EmailManager {
     	CMA_EmailManager manager = new CMA_EmailManager();
     	return manager.send(address, subject, body);
     }
-} 
+}

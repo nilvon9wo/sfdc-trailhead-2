@@ -1,4 +1,4 @@
-<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" standardStylesheets="false" controller="HotelRemoter">
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" standardStylesheets="false" controller="CMA_HotelRemoteSelector">
 <script>
 var map;
 
@@ -15,7 +15,7 @@ function initialize() {
 
 function loadHotels() {
     Visualforce.remoting.Manager.invokeAction(
-        '{!$RemoteAction.HotelRemoter.findAll}',
+        '{!$RemoteAction.CMA_HotelRemoteSelector.findAll}',
         hotelHandler,
         {secape: true}
     );

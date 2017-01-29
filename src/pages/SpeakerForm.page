@@ -1,4 +1,4 @@
-<apex:page standardController="Speaker__c" extensions="SpeakerControllerExtension">
+<apex:page standardController="Speaker__c" extensions="CMA_SpeakerVFCtrlExtension">
 <apex:form >
     <apex:pageBlock title="Edit Speaker">
         <apex:pageBlockSection columns="1">
