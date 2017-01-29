@@ -133,6 +133,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DB_AccountDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DB_AccountSelector</apexClass>
         <enabled>false</enabled>
     </classAccesses>

@@ -446,6 +446,7 @@
         <active>true</active>
         <description>Validates that the Account Number is numeric if not blank</description>
         <errorConditionFormula>AND (
+     ISCHANGED(AccountNumber),
      NOT (ISBLANK(AccountNumber)),
      NOT (ISNUMBER(AccountNumber))
 )</errorConditionFormula>
@@ -464,7 +465,9 @@
         <fullName>Valid_Billing_Country</fullName>
         <active>true</active>
         <description>Validates that the account Billing Country is  a valid ISO 3166 two-letter code.</description>
-        <errorConditionFormula>OR(
+        <errorConditionFormula>AND(
+ISCHANGED(BillingCountry),
+OR(
 LEN(BillingCountry) = 1,
 NOT(
 CONTAINS(
@@ -485,7 +488,8 @@ CONTAINS(
 &quot;LK:SD:SR:SJ:SZ:SE:CH:SY:TW:TJ:TZ:TH:TL:TG:TK:&quot; &amp;
 &quot;TO:TT:TN:TR:TM:TC:TV:UG:UA:AE:GB:US:UM:UY:UZ:&quot; &amp;
 &quot;VU:VE:VN:VG:VI:WF:EH:YE:ZM:ZW&quot;,
-BillingCountry)))</errorConditionFormula>
+BillingCountry)))
+)</errorConditionFormula>
         <errorDisplayField>BillingCountry</errorDisplayField>
         <errorMessage>A valid two-letter country code is required.</errorMessage>
     </validationRules>
