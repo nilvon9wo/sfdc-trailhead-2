@@ -10,4 +10,8 @@ public class DB_SessionSelector extends fflib_SObjectSelector {
         return Session__c.sObjectType;
     }
     
+    public List<Session__c> selectById(Set<Id> idSet) {
+   		List<Session__c> sessionList = (List<Session__c>) selectSObjectsById(idSet);
+        return sessionList;
+    }
 }

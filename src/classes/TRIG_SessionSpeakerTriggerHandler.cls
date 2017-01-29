@@ -25,7 +25,7 @@ public class TRIG_SessionSpeakerTriggerHandler extends fflib_SObjectDomain {
     }
     
     public override void onValidate() {
-    //	sessionSpeakers.rejectDoubleBooking(); 
+    	sessionSpeakers.rejectDoubleBooking(); 
     }
     
     public override void onValidate(Map<Id,SObject> existingAccountMap) {
