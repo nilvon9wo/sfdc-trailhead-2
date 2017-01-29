@@ -104,6 +104,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CMA_EmailReminderServiceBatchable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CMA_HotelRemoteSelector</apexClass>
         <enabled>true</enabled>
     </classAccesses>

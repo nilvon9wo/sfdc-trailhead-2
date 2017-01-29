@@ -1,4 +1,4 @@
-public with sharing class CMA_EmailManager {
+global with sharing class CMA_EmailManager {
 	TH_EmailSendingService emailSendingService;
 	public CMA_EmailManager(TH_EmailSendingService emailSendingService) {
 		this.emailSendingService = emailSendingService;
