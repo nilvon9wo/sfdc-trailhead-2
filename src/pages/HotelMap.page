@@ -1,8 +1,8 @@
-<apex:page sidebar="false" showheader="false">
+<apex:page sidebar="false" showheader="false" controller="HotelRemoter">
     <head>
         <apex:stylesheet value="{!URLFOR($Resource.hotel_map_css)}" />
         <apex:includeScript value="https://maps.googleapis.com/maps/api/js?sensor=false"/>    
-        <apex:includeScript value="{!URLFOR($Resource.hotel_map_js)}"/>
+        <apex:include pageName="CMA_HotelMapJs"/>
     </head>
     <body>
         <div id="map-canvas"/>

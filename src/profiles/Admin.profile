@@ -2215,6 +2215,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
+        <apexPage>CMA_HotelMapJs</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>FlightSystemsChecklist</apexPage>
         <enabled>true</enabled>
     </pageAccesses>

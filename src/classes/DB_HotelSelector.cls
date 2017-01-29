@@ -16,7 +16,7 @@ public class DB_HotelSelector extends fflib_SObjectSelector {
     	fflib_QueryFactory hotelQueryFactory = newQueryFactory();
     	
     	return (List<Hotel__c>) Database.query(
-        	hotelQueryFactory.setCondition('id IN :idSet').toSOQL()
+        	hotelQueryFactory.toSOQL()
         );
     }
 }
