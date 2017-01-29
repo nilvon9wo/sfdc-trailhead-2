@@ -24,6 +24,14 @@
         <label><!-- Last Name --></label>
         <name>Last_Name__c</name>
     </fields>
+    <fields>
+        <label><!-- Picture Path --></label>
+        <name>Picture_Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picture --></label>
+        <name>Picture__c</name>
+    </fields>
     <layouts>
         <layout>Speaker Layout</layout>
         <sections>

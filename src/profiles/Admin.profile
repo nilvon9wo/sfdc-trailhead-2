@@ -172,6 +172,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>UTIL_IfPopulatedStrategy</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>UTIL_IfPopulatedStrategyInterface</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>UTIL_IfPopulatedStringStrategy</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -1639,6 +1647,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Speaker__c.Last_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Speaker__c.Picture_Path__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Speaker__c.Picture__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
