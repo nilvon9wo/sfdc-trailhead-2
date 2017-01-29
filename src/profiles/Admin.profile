@@ -173,6 +173,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OlderAccountsUtility</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TEST_DMLHelper</apexClass>
         <enabled>true</enabled>
     </classAccesses>
