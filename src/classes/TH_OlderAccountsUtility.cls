@@ -1,18 +1,18 @@
-public class OlderAccountsUtility {
+public class TH_OlderAccountsUtility {
 	DB_AccountDAO accountDao;
 	DB_AccountSelector accountSelector;
 	
-	public OlderAccountsUtility(DB_AccountDAO accountDao, DB_AccountSelector accountSelector) {
+	public TH_OlderAccountsUtility(DB_AccountDAO accountDao, DB_AccountSelector accountSelector) {
 		this.accountDao = accountDao;
 		this.accountSelector = accountSelector;
 	}
 	
-	public OlderAccountsUtility() {
+	public TH_OlderAccountsUtility() {
 		this(new DB_AccountDAO(), new DB_AccountSelector());
 	}
 	
     public static void updateOlderAccounts() {
-    	(new OlderAccountsUtility()).updateOld();
+    	(new TH_OlderAccountsUtility()).updateOld();
     }
     
     public List<Account> updateOld() {

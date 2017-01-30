@@ -165,6 +165,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DB_PushTopicDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DB_SessionSelector</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -177,7 +181,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>OlderAccountsUtility</apexClass>
+        <apexClass>DB_StreamingChannelDAO</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -218,6 +222,22 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TH_FlightSystemSubListVFComponentCtrl</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TH_OlderAccountsUtility</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TH_PushTopicPreferences</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TH_PushTopics</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TH_StreamingChannels</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
