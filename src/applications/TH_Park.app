@@ -5,4 +5,5 @@
     <tab>Trail__c</tab>
     <tab>Campsite__c</tab>
     <tab>Campsite_Reservation__c</tab>
+    <tab>Expense__c</tab>
 </CustomApplication>
