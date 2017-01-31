@@ -1,3 +1,4 @@
 <aura:application >
-    <c:helloWorld />	
+    <c:helloWorld />
+    <c:messageContainer />	
 </aura:application>
