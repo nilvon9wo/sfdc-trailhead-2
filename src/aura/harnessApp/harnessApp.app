@@ -1,6 +1,3 @@
 <aura:application extends="force:slds">
-    <!--
-        <c:expenses />
-	-->
-    <c:helloMessageInteractive />
+    <c:expenses />
 </aura:application>
