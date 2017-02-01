@@ -1,7 +1,6 @@
-<aura:application >
+<aura:application extends="force:slds">
     <!--
-        <c:helloWorld />
-        <c:messageContainer />	
+        <c:expenses />
 	-->
-        <c:helloPlayground />
+    <c:helloMessageInteractive />
 </aura:application>
