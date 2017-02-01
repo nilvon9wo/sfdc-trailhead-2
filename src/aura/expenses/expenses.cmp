@@ -8,6 +8,7 @@
                              'Date__c': '',
                              'Reimbursed__c': false
            			}"/>
+    <aura:attribute name="expenses" type="Expense__c[]"/>
                     
 	<div class="slds-page-header" role="banner">
         <div class="slds-grid">
