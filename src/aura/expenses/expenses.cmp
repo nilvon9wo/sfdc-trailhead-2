@@ -67,4 +67,5 @@
 			</fieldset>
         </div>
     </div>
+    <c:expenseList expenses="{!v.expenses}" />
 </aura:component>

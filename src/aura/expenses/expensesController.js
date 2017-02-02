@@ -1,6 +1,9 @@
 ({
-	myAction : function(component, event, helper) {
-        var expname = component.find('expname').get('v.value');
+	clickCreateExpense : function(component, event, helper) {
+        var validExpense = true;
+        
+        var nameField = component.find('expname');
+        var expname = nameField.get('v.value');
         var nameFieldErrors = ($A.util.isEmpty(expname)) ? [{message: 'Expense name can\'t be blank.'}] : null;
         nameField.set('v.errors', nameFieldErrors);
         
