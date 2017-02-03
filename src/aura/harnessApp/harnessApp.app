@@ -1,3 +1,6 @@
 <aura:application extends="force:slds">
-    <c:expenses />
+    <!--
+    	<c:expenses />
+	-->
+	<c:campingList />	
 </aura:application>

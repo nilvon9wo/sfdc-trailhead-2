@@ -1,0 +1,17 @@
+<aura:component >
+    <aura:attribute name="items" type="Camping_Item__c[]"/>
+    
+    <div class="slds-card slds-p-top--medium">
+        <header class="slds-card__header">
+            <h3 class="slds-text-heading--small">Camping Item List</h3>
+        </header>
+        
+        <section class="slds-card__body">
+            <div id="list" class="row">
+                <aura:iteration items="{!v.items}" var="items">
+                    <c:campingListItem item="{!items}"/>
+                </aura:iteration>
+            </div>
+        </section>
+    </div>	
+</aura:component>
