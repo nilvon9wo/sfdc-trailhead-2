@@ -57,7 +57,7 @@
     
                     <div class="slds-form-element">
                         <div class="slds-form-element__control">
-                            <ui:inputText aura:id="reimbursed" label="Reimbursed?" class="slds-checkbox" labelClass="slds-form-element__label"
+                            <ui:inputCheckbox aura:id="reimbursed" label="Reimbursed?" class="slds-checkbox" labelClass="slds-form-element__label"
                                             value="{!v.newExpense.Reimbursed__c}" />
                         </div>
                     </div>

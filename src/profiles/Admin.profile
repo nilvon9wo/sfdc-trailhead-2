@@ -158,6 +158,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DB_ExpenseDAO</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DB_ExpenseSelector</apexClass>
         <enabled>true</enabled>
     </classAccesses>

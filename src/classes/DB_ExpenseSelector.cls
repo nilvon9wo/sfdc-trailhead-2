@@ -1,11 +1,13 @@
 public class DB_ExpenseSelector extends fflib_SObjectSelector { 
     public List<Schema.SObjectField> getSObjectFieldList() {
     	return new List<Schema.SObjectField> {
-    		Expense__c.id,
-    		Expense__c.name,
     		Expense__c.amount__c,
     		Expense__c.client__c,
-    		Expense__c.date__c
+    		Expense__c.createdDate,
+    		Expense__c.date__c,
+    		Expense__c.id,
+    		Expense__c.name,
+    		Expense__c.reimbursed__c
     	};
     } 
     
