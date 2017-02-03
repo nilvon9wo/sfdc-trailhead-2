@@ -1,1 +1,52 @@
-<aura:component />
+<aura:component >
+	<aura:attribute name="items" type="Camping_Item__c[]"/>
+    <aura:attribute name="newItem" type="Camping_Item__c" default="{
+                                                                   'Name': '',
+                                                                   'sobjectType': 'Camping_Item__c', 
+                                                                   'Quantity__c': 0, 
+                                                                   'Price__c': 0,
+                                                                   'Packed__c': false
+                                                                   }"/>   
+    
+    <div aria-labelledby="new-item-form">
+        <fieldset class="slds-box slds-theme--default slds-container--small">
+            <legend id="new-camping-item-form" class="slds-text-heading--small slds-p-vertical--medium">
+      			Add Camping Item
+    		</legend>
+            <form class="slds-form--stacked">
+                <div class="slds-form-element slds-is-required">
+                  <div class="slds-form-element__control">
+                      <ui:inputText aura:id="itemName" label="Item Name" class="slds-input" labelClass="slds-form-element__label"
+                          value="{!v.newItem.Name}" required="true"/>
+                  </div>
+             	</div>
+                
+                <div class="slds-form-element slds-is-required">
+                  <div class="slds-form-element__control">
+                      <ui:inputNumber aura:id="quantity" label="Quantity" class="slds-input" labelClass="slds-form-element__label"
+                          value="{!v.newItem.Quantity__c}" required="true"/>
+        
+                  </div>
+              	</div>
+
+              	<div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                      <ui:inputCurrency aura:id="price" label="Price" class="slds-input" labelClass=" slds-form-element__label"
+                          value="{!v.newItem.Price__c}" />
+                  </div>
+              	</div>
+        
+              	<div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                      <ui:inputCheckbox aura:id="packed" label="Packed?" class="slds-checkbox" labelClass="slds-form-element__label"
+                                        value="{!v.newItem.Packed__c}"/>
+                  </div>
+              	</div>
+                
+                <div class="slds-form-element">
+              		<ui:button label="Create Item" class="slds-button slds-button--brand" press="{!c.clickCreateItem}"/>
+          		</div>
+            </form>
+        </fieldset>
+    </div>
+</aura:component>

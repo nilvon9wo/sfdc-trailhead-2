@@ -2,6 +2,6 @@
     <aura:attribute name="items" type="Camping_Item__c[]"/>
 
     <c:campingHeader />
-    <c:campingItemForm2 items="{!v.items}" />
+    <c:campingItemForm items="{!v.items}" />
     <c:campingItemIteration items="{!v.items}" />
 </aura:component>
