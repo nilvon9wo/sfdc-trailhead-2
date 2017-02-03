@@ -1,4 +1,12 @@
 ({
+    doInit: function(component, event, helper) {
+    	var action = component.get('c.getExpenses');
+        action.setCallback(this, function(response) {
+        	helper.receiveResponse(component, response);
+        });
+        $A.enqueueAction(action);
+    },
+    
 	clickCreateExpense : function(component, event, helper) {
         var validExpense = true;
         

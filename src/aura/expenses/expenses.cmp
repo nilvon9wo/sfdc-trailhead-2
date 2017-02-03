@@ -1,4 +1,6 @@
-<aura:component >
+<aura:component controller="CAMP_ExpensesAuraCtrl">
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    
     <aura:attribute name="newExpense" type="Expense__c"
                     default="{ 
                              'sobjectType': 'Expense__c',

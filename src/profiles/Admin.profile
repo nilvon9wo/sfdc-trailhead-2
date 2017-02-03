@@ -106,6 +106,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>CAMP_ExpensesAuraCtrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CMA_AttachPictureToSpeakerStrategy</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -151,6 +155,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>DB_ContactSelector</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_ExpenseSelector</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
