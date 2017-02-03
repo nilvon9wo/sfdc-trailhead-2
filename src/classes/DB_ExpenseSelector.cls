@@ -16,10 +16,8 @@ public class DB_ExpenseSelector extends fflib_SObjectSelector {
     }    
     
     public List<Expense__c> selectAll() {
-    	fflib_QueryFactory hotelQueryFactory = newQueryFactory();
-    	
     	return (List<Expense__c>) Database.query(
-        	hotelQueryFactory.toSOQL()
+        	newQueryFactory().toSOQL()
         );
     }
 }

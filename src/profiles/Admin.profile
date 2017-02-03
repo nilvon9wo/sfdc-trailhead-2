@@ -106,6 +106,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>CAMP_CampingListAuraCtrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CAMP_ExpensesAuraCtrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -151,6 +155,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>DB_CampaignSelector</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_CampingItemDAO</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_CampingItemSelector</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

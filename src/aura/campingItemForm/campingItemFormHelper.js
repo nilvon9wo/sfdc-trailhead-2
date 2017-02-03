@@ -1,9 +1,21 @@
 ({
     createItem: function(component, newItem) {
-        var newItemClone = JSON.parse(JSON.stringify(newItem));
-        var items = component.get("v.items");
-        items.push(newItemClone);
-        component.set("v.items", items);
+        var action = component.get('c.saveItem');
+        action.setParams({'campingItem': newItem});
+        action.setCallback(this, function(response) {
+           this.handleSaveResult(component, response);
+        });
+        $A.enqueueAction(action);
+        
+    },
+    
+    handleSaveResult: function(component, response) {
+    	var state = response.getState();
+        if (component.isValid() && state === 'SUCCESS') {
+            var items = component.get('v.items');
+            items.push(response.getReturnValue());
+            component.set('v.items', items);
+        }
     },
 	
     validate : function(component, fieldName, errorMessage, rule) {

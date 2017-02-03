@@ -1,4 +1,5 @@
-<aura:component >
+<aura:component controller="CAMP_CampingListAuraCtrl">
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
     <aura:attribute name="items" type="Camping_Item__c[]"/>
 
     <c:campingHeader />

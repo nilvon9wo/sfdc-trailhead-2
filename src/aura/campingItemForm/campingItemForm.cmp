@@ -1,4 +1,4 @@
-<aura:component >
+<aura:component controller="CAMP_CampingListAuraCtrl">
 	<aura:attribute name="items" type="Camping_Item__c[]"/>
     <aura:attribute name="newItem" type="Camping_Item__c" default="{
                                                                    'Name': '',
