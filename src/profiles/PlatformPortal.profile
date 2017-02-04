@@ -2148,7 +2148,7 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>SLDS_RetrieveAccountsJS</apexPage>
+        <apexPage>SLDS_AccountsHandlerJs</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

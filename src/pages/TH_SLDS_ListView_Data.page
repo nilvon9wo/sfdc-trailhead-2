@@ -18,11 +18,12 @@
                 
                 <c:SLDS_AccountPageHeader />
                 <div class="myapp">
+                    <c:SLDS_AccountInputForm /> 
                     <c:SLDS_AccountDataTable />
                 </div>
                 <c:SLDS_PageFooter />
             </div>
         </body>
     </html>
-    <apex:include pageName="SLDS_RetrieveAccountsJS"/>
+    <apex:include pageName="SLDS_AccountsHandlerJs"/>
 </apex:page>

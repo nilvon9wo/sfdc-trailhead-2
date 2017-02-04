@@ -6,12 +6,41 @@
     var account = new SObjectModel.Account();
     var outputDiv = document.getElementById('account-list');
     updateOutputDiv();
+    
+    var accountForm = document.getElementById('add-account-form');
+    var accountNameField = document.getElementById('account-name');
+    document.addEventListener('submit', function(event) {
+    	event.preventDefault();
+    	createAccount();
+    });
+    
+    // Create Account Helpers
+    
+    function createAccount() {
+    	var newAccount = new SObjectModel.Account();
+    	var record = { Name: accountNameField.value };
+    	newAccount.create(record, createAccountResponseHandler);
+    }
+    
+    function createAccountResponseHandler(error) {
+    	if (error) {
+            alert (error.message);
+            return false;
+    	}
+    	else {
+    		updateOutputDiv();
+    		accountNameField.value = '';
+    		return true;
+    	}
+    }
+    
+    // Account List Helpers --------------------------
 
     function updateOutputDiv() {
-        account.retrieve(ACCOUNT_QUERY_CRITERIA, responseHander);
+        account.retrieve(ACCOUNT_QUERY_CRITERIA, updateOutputDivResponseHander);
     }   
     
-    function responseHander(error, records) {
+    function updateOutputDivResponseHander(error, records) {
         if (error) {
             alert (error.message);
             return false;

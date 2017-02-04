@@ -1,0 +1,18 @@
+<apex:component >
+	<div aria-labelledby="new-account-form">
+		<form class="slds-form--stacked" id="add-account-form">
+			<fieldset class="slds-box slds-theme--default slds-container--small">
+				<legend id="new-account-form" class="slds-text-heading--medium slds-p-vertical--medium">
+					Add a new account
+				</legend>
+				<div class="slds-form-element">
+					<label class="slds-form-element__label" for="account-name">Name</label>
+					<div class="slds-form-element__control">
+						<input id="account-name" class="slds-input" type="text" placeholder="New account"/>
+					</div>
+				</div>
+				<button class="slds-button slds-button--brand slds-m-top--medium" type="submit">Create Account</button>
+			</fieldset>
+		</form>
+	</div>
+</apex:component>
