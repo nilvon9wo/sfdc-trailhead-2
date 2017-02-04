@@ -23,5 +23,35 @@
 				</div>
 			</div>
 		</div>
+		<ul class="slds-grid slds-page-header__detail-row">
+			<li class="slds-page-header__detail-block">
+				<p class="slds-text-title slds-truncate slds-m-bottom--x-small" title="Field 1">Field 1</p>
+				<p class="slds-text-body--regular slds-truncate" title="Description that demonstrates truncation with a long text field">
+					Description that demonstrates truncation with a long text field
+				</p>
+			</li>
+			<li class="slds-page-header__detail-block">
+				<p class="slds-text-title slds-truncate slds-m-bottom--x-small" title="Field 2 (3)">
+					Field 2 (3)
+					<button class="slds-button slds-button-icon" aria-haspopup="true">
+						<c:SLDS_Icon name="down" svgClasses="slds-button__icon slds-button__icon--small" />
+						<span class="slds-assistive-text">More Actions</span>
+					</button>
+				</p>
+				<p class="slds-text-body--regular">Multiple Values</p>
+			</li>
+			<li class="slds-page-header__detail-block">
+				<p class="slds-text-title slds-truncate slds-m-bottom--x-small" title="Field 3">Field 3</p>
+				<a href="#">Hyperlink</a>
+			</li>
+			<li class="slds-page-header__detail-block">
+				<p class="slds-text-title slds-truncate slds-m-bottom--x-small" title="Field 4">Field 4</p>
+				<p>
+					<span title="Description (2-line truncation-must use JS to truncate).">
+						Description (2-line truncation-must use JS to truncate).
+					</span>
+				</p>
+			</li>
+		</ul>
 	</div>
 </apex:component>
