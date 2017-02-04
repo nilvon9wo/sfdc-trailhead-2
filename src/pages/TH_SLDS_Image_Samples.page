@@ -1,4 +1,5 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    <apex:includeScript value="{!URLFOR($Resource.svg4everybody)}"/>
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
         <head>
             <title>Salesforce Lightning Design System Trailhead Module</title>
@@ -10,10 +11,16 @@
         <body>
             <div class="bmk-th2">
                 <span class="slds-avatar slds-avatar--x-small">
-                	<img src="{!URLFOR($Resource.SLDS221, 'assets/images/avatar1.jpg')}" alt="" />
+                    <img src="{!URLFOR($Resource.SLDS221, 'assets/images/avatar1.jpg')}" alt="" />
                 </span>
                 <span class="slds-avatar slds-avatar--medium">
                     <img src="{!URLFOR($Resource.SLDS221, 'assets/images/avatar2.jpg')}" alt="" />
+                </span>
+                <span class="slds-icon__container slds-icon-standard-account" title="description of icon when needed">
+                    <svg aria-hidden="true" class="slds-icon">
+                        <use xlink:href="{!URLFOR($Resource.SLDS221, 'assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Account Icon</span>
                 </span>
             </div>
         </body>
