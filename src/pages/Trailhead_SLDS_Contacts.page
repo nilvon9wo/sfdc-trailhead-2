@@ -7,6 +7,7 @@
         <body>
             <div class="bmk-th2">
                 <c:SLDS_Masthead />
+                <c:SLDS_ContactPageHeader />
                 <div class="myapp slds-p-horizontal--medium">
                     <ul id="contact-list" class="slds-has-dividers--bottom-space"></ul>
                 </div>
