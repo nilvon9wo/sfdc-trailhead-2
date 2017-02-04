@@ -2199,6 +2199,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>TH_SLDS_Image_Samples</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>TH_SLDS_ListView_Data</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
