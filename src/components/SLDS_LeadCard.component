@@ -1,0 +1,39 @@
+<apex:component >
+	<article class="slds-card slds-card--narrow">
+		<header class="slds-card__header slds-grid">
+			<div class="slds-media slds-media--center slds-has-flexi-truncate">
+				<div class="slds-media__figure">
+					<c:SLDS_Icon name="lead" svgClasses="slds-icon slds-icon-standard-lead slds-icon--small" />
+				</div>
+				<div class="slds-media__body slds-truncate">
+					<h3 class="slds-text-heading--small">Team</h3>
+				</div>
+			</div>
+		</header>
+		<section class="slds-card__body">
+			<div class="slds-card__body--inner">
+				<div class="slds-tile">
+					<p class="slds-truncate" title="Related Record Title 1">
+						<a href="#">Anne Choi</a>
+					</p>
+					<div class="slds-title__detail slds-text-body--small">
+						<dl class="slds-dl--horizontal">
+							<dt class="slds-dl--horizontal__label">
+								<p class="slds-truncate" title="Email:">Email</p>
+							</dt>
+							<dd class="slds-dl--horizontal__detail slds-tile__meta">
+								<p class="slds-truncate" title="achoi@burlington.example.com">
+									achoi@burlington.example.com
+								</p>
+							</dd>
+						</dl>
+					</div> 
+				</div>
+			</div>
+		</section>
+		
+		<footer class="slds-card__footer">
+			<a href="#">View All <span class="slds-assistive-text">Team Members</span></a>
+		</footer>
+	</article>
+</apex:component>

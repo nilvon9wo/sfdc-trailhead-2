@@ -1,48 +1,46 @@
 <apex:component >
-	<div class="slds-col slds-col-rule--right slds-p-right--large slds-size--8-of-12">
-		<article class="slds-card">
-			<header class="slds-card__header slds-grid">
-				<div class="slds-media slds-media--center slds-has-flexi-truncate">
-					<div class="slds-media__figure">
-						<c:SLDS_Icon name="contact" svgClasses="slds-icon slds-icon-standard-contact slds-icon--small"/>
-					</div>
-					<div class="slds-media__body slds-truncate">
-						<a href="#" class="slds-text-link--reset">
-							<span class="slds-text-heading--small">Contacts</span>
-						</a>
-					</div>
+	<article class="slds-card">
+		<header class="slds-card__header slds-grid">
+			<div class="slds-media slds-media--center slds-has-flexi-truncate">
+				<div class="slds-media__figure">
+					<c:SLDS_Icon name="contact" svgClasses="slds-icon slds-icon-standard-contact slds-icon--small"/>
 				</div>
-			</header>
-			
-			<section class="slds-card__body">
-				<table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer">
-					<thead>
-						<tr class="slds-text-heading--label">
-							<th class="slds-size--1-of-4" scope="col">Name</th>
-							<th class="slds-size--1-of-4" scope="col">Company</th>
-							<th class="slds-size--1-of-4" scope="col">Title</th>
-							<th class="slds-size--1-of-4" scope="col">Email</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="slds-hint-parent">
-							<th class="slds-size--1-or-4" scope="row"><a href="#">Adam Choi</a></th>
-							<td class="slds-size--1-or-4" scope="row">Company One</td>
-							<td class="slds-size--1-or-4" scope="row">Director of Operations</td>
-							<td class="slds-size--1-or-4" scope="row">adam@company.example.com</td>
-							<td class="slds-cell-shrink">
-								<button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small">
-									<c:SLDS_Icon name="down" svgClasses="slds-button__icon slds-button__icon--hint slds-button__icon--small"/>
-									<span class="slds-assistive-text">Show More</span>
-								</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</section>
-			<footer class="slds-card__footer">
-				<a href="#">View All <span class="slds-assistive-text">Contacts</span></a>
-			</footer>
-		</article>
-	</div>
+				<div class="slds-media__body slds-truncate">
+					<a href="#" class="slds-text-link--reset">
+						<span class="slds-text-heading--small">Contacts</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		
+		<section class="slds-card__body">
+			<table class="slds-table slds-table--bordered slds-no-row-hover slds-table--cell-buffer">
+				<thead>
+					<tr class="slds-text-heading--label">
+						<th class="slds-size--1-of-4" scope="col">Name</th>
+						<th class="slds-size--1-of-4" scope="col">Company</th>
+						<th class="slds-size--1-of-4" scope="col">Title</th>
+						<th class="slds-size--1-of-4" scope="col">Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="slds-hint-parent">
+						<th class="slds-size--1-or-4" scope="row"><a href="#">Adam Choi</a></th>
+						<td class="slds-size--1-or-4" scope="row">Company One</td>
+						<td class="slds-size--1-or-4" scope="row">Director of Operations</td>
+						<td class="slds-size--1-or-4" scope="row">adam@company.example.com</td>
+						<td class="slds-cell-shrink">
+							<button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small">
+								<c:SLDS_Icon name="down" svgClasses="slds-button__icon slds-button__icon--hint slds-button__icon--small"/>
+								<span class="slds-assistive-text">Show More</span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<footer class="slds-card__footer">
+			<a href="#">View All <span class="slds-assistive-text">Contacts</span></a>
+		</footer>
+	</article>
 </apex:component>
