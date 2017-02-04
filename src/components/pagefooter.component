@@ -1,0 +1,8 @@
+<apex:component >
+  <footer role="contentinfo" class="slds-p-around--large">
+  	<div class="slds-grid slds-grid--align-spead">
+  		<p class="slds-col">Salesforce Lightning Design System Example</p>
+  		<p class="slds-col">&copy; Brian Matthew Kessler</p>
+  	</div>
+  </footer>
+</apex:component>

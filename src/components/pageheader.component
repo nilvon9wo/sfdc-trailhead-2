@@ -1,0 +1,18 @@
+<apex:component >
+	<div class="slds-page-header" roler="banner">
+		<div class="slds-grid">
+			<div class="slds-col slds-has-flexi-truncate">
+				<p class="slds-text-title--caps slds-line-height--reset">Accounts</p>
+				<h1 class="slds-page-header__title slds-truncate" title="My Accounts">My Accounts</h1>
+			</div>
+			<div class="slds-col slds-no-flexi slds-grid slds-align-top">
+				<button class="slds-button slds-button--neutral">New Account</button>
+			</div>
+		</div>
+		<div class="slds-grid">
+			<div class="slds-col slds-align-bottom slds-p-top--small">
+				<p class="slds-text-body--small page-header__info">COUNT items</p>
+			</div>
+		</div>
+	</div>
+</apex:component>
