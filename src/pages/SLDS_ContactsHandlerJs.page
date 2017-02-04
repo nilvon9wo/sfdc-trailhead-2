@@ -19,6 +19,11 @@
 	function createTile(record) {
 		return '<li class="slds-item">'
 				+ '<div class="slds-tile slds-media">'
+					+ '<div class="slds-media__figure">'
+						+ '<svg aria-hidden="true" class="slds-icon slds-icon-standard-user">'
+							+ '<use xlink:href="{!URLFOR($Resource.SLDS221, 'assets/icons/standard-sprite/svg/symbols.svg#user')}"></use>'
+						+ '</svg>'
+					+ '</div>'
 					+ '<div class="slds-media__body">'
 						+ '<h3 class="slds-truncate title="' + record.get('Name') + '">'
 							+ '<a href="#">' + record.get('Name') + '</a>'
