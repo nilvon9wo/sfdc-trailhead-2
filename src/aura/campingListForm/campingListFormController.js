@@ -1,5 +1,5 @@
 ({
-    clickCreateItem: function(component, event, helper) {
+    submitForm: function(component, event, helper) {
         var isValid = helper.isNotBlank(component, 'Item name', 'itemName')
         	&& helper.isNotBlank(component, 'Quantity', 'quantity')
         	&& helper.isNotBlank(component, 'Price', 'price');

@@ -1,12 +1,8 @@
 ({
     createItem: function(component, newItem) {
-        var action = component.get('c.saveItem');
-        action.setParams({'campingItem': newItem});
-        action.setCallback(this, function(response) {
-           this.handleSaveResult(component, response);
-        });
-        $A.enqueueAction(action);
-        
+      	var addItem = component.getEvent('addItem');
+      	addItem.setParams({'item': newItem});
+        addItem.fire();
     },
     
     handleSaveResult: function(component, response) {
@@ -42,7 +38,7 @@
     resetForm: function(component) {
 			var blankItem = {
                 sobjectType: 'Camping_Item__c', 
-                Name: '',
+                Name__c: '',
                 Quantity__c: 0, 
                 Price__c: 0,
                 Packed__c: false

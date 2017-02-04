@@ -5,5 +5,10 @@
         	helper.handleCampingItemsInit(component, response);
         });
         $A.enqueueAction(action);
+    },
+
+    handleAddItem: function(component, event, helper) {
+        var newItem = event.getParam('item');
+        helper.createItem(component, newItem);
     }
 })

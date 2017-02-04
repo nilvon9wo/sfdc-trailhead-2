@@ -7,7 +7,9 @@
                              Packed__c: false
                     }" />
 
-    <p>Name: <ui:outputText value="{!v.item.Name}" /></p>
+    <a aura:id="item" href="{!'/' + v.item.Id}">
+                    <h3>{!v.item.Name}: {!v.item.Name__c}</h3>
+                </a>
     <p>Price: <ui:outputCurrency value="{!v.item.Price__c}" /></p>
     <p>Quantity: <ui:outputNumber value="{!v.item.Quantity__c}" /></p>
     <p>Packed: <ui:outputCheckbox value="{!v.item.Packed__c}" /></p>
