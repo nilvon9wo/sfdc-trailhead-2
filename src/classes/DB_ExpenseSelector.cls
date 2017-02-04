@@ -7,7 +7,6 @@ public class DB_ExpenseSelector extends fflib_SObjectSelector {
     		Expense__c.date__c,
     		Expense__c.id,
     		Expense__c.name,
-    		Expense__c.name__c,
     		Expense__c.reimbursed__c
     	};
     } 

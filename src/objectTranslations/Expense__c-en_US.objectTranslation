@@ -28,12 +28,5 @@
         <label><!-- Reimbursed --></label>
         <name>Reimbursed__c</name>
     </fields>
-    <layouts>
-        <layout>Expense Layout</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
     <startsWith>Vowel</startsWith>
 </CustomObjectTranslation>

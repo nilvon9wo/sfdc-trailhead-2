@@ -3,7 +3,6 @@ public class DB_CampingItemSelector extends fflib_SObjectSelector {
     	return new List<Schema.SObjectField> {
     		Camping_Item__c.id,
     		Camping_Item__c.name,
-    		Camping_Item__c.name__c,
     		Camping_Item__c.packed__c,
     		Camping_Item__c.price__c,
     		Camping_Item__c.quantity__c
