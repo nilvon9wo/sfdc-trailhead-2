@@ -1949,6 +1949,10 @@
         <apexPage>TH_QuickAccount</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>Trailhead_SLDS_Contacts</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <recordTypeVisibilities>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
