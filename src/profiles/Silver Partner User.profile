@@ -2209,6 +2209,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SLDS_ContactsHandlerJs</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SLDS_ImageSamples</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

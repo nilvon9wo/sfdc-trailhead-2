@@ -16,5 +16,5 @@
             </div>
         </body>
     </html>
-    <apex:include pageName="SLDS_AccountsHandlerJs"/>
+    <apex:include pageName="SLDS_ContactsHandlerJs"/>
 </apex:page>

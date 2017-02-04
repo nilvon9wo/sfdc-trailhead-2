@@ -1,0 +1,35 @@
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" standardStylesheets="false" controller="CMA_HotelRemoteSelector">
+<script>
+(function(){
+	const CONTACT_QUERY_CRITERIA = {orderby: [{LastModifiedDate: 'DESC'}], limit:10};
+	var contactList = document.getElementById('contact-list');
+
+	new SObjectModel.Contact()
+		.retrieve(CONTACT_QUERY_CRITERIA, contactResponseHandler);
+
+	function contactResponseHandler(error, records) {
+		if (error) {
+			alert(error.message);
+		}
+		else {
+			contactList.innerHTML = records.map(createTile).join('');
+		}
+	}
+
+	function createTile(record) {
+		return '<li class="slds-item">'
+				+ '<div class="slds-tile slds-media">'
+					+ '<div class="slds-media__body">'
+						+ '<h3 class="slds-truncate title="' + record.get('Name') + '">'
+							+ '<a href="#">' + record.get('Name') + '</a>'
+						+ '</h3>'
+						+ '<div class="slds-title__detail slds-text-body--small">'
+							+ '<p class="slds-truncate">' + record.get('Title') + '</p>'
+						+ '</div>'
+					+ '</div>'
+				+ '</div>'
+			+ '</li>';
+	}
+})();
+</script>
+</apex:page>

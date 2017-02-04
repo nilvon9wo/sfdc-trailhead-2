@@ -2488,6 +2488,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SLDS_ContactsHandlerJs</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SLDS_ImageSamples</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
