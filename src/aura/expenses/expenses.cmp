@@ -2,8 +2,8 @@
     <aura:attribute name="expenses" type="Expense__c[]"/>
 
     <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
-    <aura:handler name="createExpense" event="c:expensesItemUpdate" action="{!c.handleCreateExpense}" />
-    <aura:handler name="updateExpense" event="c:expensesItemUpdate" action="{!c.handleUpdateExpense}" />
+    <aura:handler name="createExpense" event="c:expensesItemUpdateEvent" action="{!c.handleCreateExpense}" />
+    <aura:handler name="updateExpense" event="c:expensesItemUpdateEvent" action="{!c.handleUpdateExpense}" />
     
                     
 	<div class="slds-page-header" role="banner">

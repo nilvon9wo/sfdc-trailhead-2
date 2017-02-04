@@ -7,7 +7,7 @@
                                                                    'Price__c': 0,
                                                                    'Packed__c': false
                                                                    }"/>   
-    <aura:registerEvent name="addItem" type="c:addItemEvent" />
+    <aura:registerEvent name="addItem" type="c:campingAddItemEvent" />
     
     <div aria-labelledby="new-item-form">
         <fieldset class="slds-box slds-theme--default slds-container--small">

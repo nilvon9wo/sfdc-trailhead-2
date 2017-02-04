@@ -1,6 +1,6 @@
 <aura:component >
     <aura:attribute name="expense" type="Expense__c" />
-    <aura:registerEvent name="updateExpense" type="c:expensesItemUpdate"/>
+    <aura:registerEvent name="updateExpense" type="c:expensesItemUpdateEvent"/>
 
     <div class="slds-card">
         <div class="{!v.expense.Reimbursed__c == true ? 'slds-theme--success' : 'slds-theme--warning'}">
