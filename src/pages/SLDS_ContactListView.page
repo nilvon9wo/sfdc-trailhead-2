@@ -1,0 +1,20 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <c:SLDS_Head />
+        <apex:remoteObjects >
+            <apex:remoteObjectModel name="Contact" fields="Id, Name, Title, LastModifiedDate, PhotoUrl" />
+        </apex:remoteObjects>
+        <body>
+            <div class="bmk-th2">
+                <c:SLDS_Masthead />
+                <c:SLDS_ContactPageHeader />
+              
+                <div class="myapp slds-p-horizontal--medium">
+                    <ul id="contact-list" class="slds-has-dividers--bottom-space"></ul>
+                </div>
+                <c:SLDS_PageFooter />
+            </div>
+        </body>
+    </html>
+    <apex:include pageName="SLDS_ContactsHandlerJs"/>
+</apex:page>
