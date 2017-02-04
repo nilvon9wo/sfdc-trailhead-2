@@ -1,0 +1,19 @@
+<aura:component controller="AccountsController">
+    <aura:attribute name="accounts" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <table class="slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout">
+        <thead>
+            <tr class="slds-text-heading--label">
+                <th scope="col"><div class="slds-truncate" title="ID">ID</div></th>
+                <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+                <th scope="col"><div class="slds-truncate" title="Type">Type</div></th>
+                <th scope="col"><div class="slds-truncate" title="Number Of Employees">Number Of Employees</div></th>
+                <th scope="col"><div class="slds-truncate" title="Ticker Symbol">Ticker Symbol</div></th>
+                <th scope="col"><div class="slds-truncate" title="Phone">Phone</div></th>
+                <th scope="col"><div class="slds-truncate" title="Delete">Delete</div></th>
+            </tr>
+        </thead>
+    </table>
+	
+</aura:component>

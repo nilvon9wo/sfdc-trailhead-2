@@ -2,7 +2,13 @@ public class DB_AccountSelector extends fflib_SObjectSelector {
     public List<Schema.SObjectField> getSObjectFieldList() {
     	return new List<Schema.SObjectField> {
     		Account.id,
-    		Account.description
+    		Account.description,
+    		Account.industry,
+    		Account.name,
+    		Account.numberOfEmployees,
+    		Account.phone,
+    		Account.tickerSymbol,
+    		Account.type
     	};
     }
     
@@ -14,6 +20,12 @@ public class DB_AccountSelector extends fflib_SObjectSelector {
         return 'createdDate ASC';
     }
     
+    public List<Account> selectAll() {
+    	return (List<Account>) Database.query(
+        	newQueryFactory().toSOQL()
+        );
+    }
+        
     public List<Account> selectOldest(Integer recordLimit) {
     	return (List<Account>) Database.query(
     		this.newQueryFactory()
