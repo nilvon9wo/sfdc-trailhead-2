@@ -7,6 +7,12 @@
 					My Contacts
 				</h1>
 			</div>
+			<div class="slds-col slds-no-flex slds-grid slds-align-top">
+				<div class="slds-button-group" role="group">
+					<button class="slds-button slds-button--neutral">New Contact</button>
+					<button class="slds-button slds-button--neutral">More</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </apex:component>
