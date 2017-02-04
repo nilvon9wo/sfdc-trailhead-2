@@ -3,7 +3,7 @@
     <apiVersion>39.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <label>Trailhead_SLDS_ListView</label>
+    <label>SLDS_RetrieveAccountsJS</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
         <minorNumber>7</minorNumber>

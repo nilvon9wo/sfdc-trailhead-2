@@ -2265,6 +2265,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SLDS_RetrieveAccountsJS</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SpeakerForm</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -2281,11 +2285,11 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>Trailhead_SLDS_Basic</apexPage>
+        <apexPage>TH_SLDS_Basic</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>Trailhead_SLDS_ListView</apexPage>
+        <apexPage>TH_SLDS_ListView_Data</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <recordTypeVisibilities>

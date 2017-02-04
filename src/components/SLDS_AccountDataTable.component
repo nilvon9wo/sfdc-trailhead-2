@@ -1,4 +1,7 @@
 <apex:component >
+	<div id="account-list" class="slds-p-vertical--medium"></div>
+
+<!-- 
 	<table class="slds-table slds-table--bordered slds-table--cell-buffer slds-no-row-hover">
 		<thead>
 			<tr class="slds-text-heading--label">
@@ -17,4 +20,5 @@
 			</tr>
 		</tbody>
 	</table>
+-->
 </apex:component>

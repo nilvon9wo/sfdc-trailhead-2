@@ -7,6 +7,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <apex:stylesheet value="{!URLFOR($Resource.SLDS221, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
         </head>
+        <apex:remoteObjects >
+            <apex:remoteObjectModel name="Account" fields="Id, Name, LastModifiedDate" />
+        </apex:remoteObjects>
         <body>
             <div class="bmk-th2">
                 <p class="slds-text-heading--label slds-m-bottom--small">
@@ -21,4 +24,5 @@
             </div>
         </body>
     </html>
+    <apex:include pageName="SLDS_RetrieveAccountsJS"/>
 </apex:page>
