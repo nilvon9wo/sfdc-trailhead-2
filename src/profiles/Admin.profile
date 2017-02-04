@@ -2488,6 +2488,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SLDS_ContactListView</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SLDS_ContactsHandlerJs</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -2509,10 +2513,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>TH_QuickAccount</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>Trailhead_SLDS_Contacts</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
