@@ -1,20 +1,15 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
         <c:SLDS_Head />
-        <apex:remoteObjects >
-            <apex:remoteObjectModel name="Account" fields="Id, Name, LastModifiedDate" />
-        </apex:remoteObjects>
         <body>
             <div class="bmk-th2">
                 <c:SLDS_Masthead />
-                <c:SLDS_AccountPageHeader />
+                <c:SLDS_AccountRecordPageHeader /> 
                 <div class="myapp">
-                    <c:SLDS_AccountInputForm /> 
-                    <c:SLDS_AccountDataTable />
+                    <c:SLDS_AccountRelatedListCards />
+                    <c:SLDS_PageFooter />
                 </div>
-                <c:SLDS_PageFooter />
             </div>
         </body>
     </html>
-    <apex:include pageName="SLDS_AccountsHandlerJs"/>
 </apex:page>

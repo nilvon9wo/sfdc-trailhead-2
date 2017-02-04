@@ -1,0 +1,3 @@
+<apex:component >
+	<p class="slds-text-heading--label slds-m-bottom--small">Salesforce Lightning Design System Trailhead Module</p>
+</apex:component>

@@ -1,0 +1,11 @@
+<apex:component >
+	<div class="slds-grid slds-m-top--large">
+		<div class="slds-col slds-col-rule--right slds-p-right--large slds-size--8-of-12">
+			<c:SLDS_ContactCard />
+		</div>
+
+		<div class="slds-col slds-p-left--large slds-size--4-of-12">
+			Right hand column related list
+		</div>
+	</div>
+</apex:component>

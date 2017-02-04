@@ -1,13 +1,6 @@
 <apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
-    <apex:includeScript value="{!URLFOR($Resource.svg4everybody)}"/>
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
-        <head>
-            <title>Salesforce Lightning Design System Trailhead Module</title>
-            <meta charset="utf-8" />
-            <meta http-equiv="x-ua-compatible" content="ie=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <apex:stylesheet value="{!URLFOR($Resource.SLDS221, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
-        </head>
+        <c:SLDS_Head />
         <body>
             <div class="bmk-th2">
                 <span class="slds-avatar slds-avatar--x-small">
@@ -17,9 +10,7 @@
                     <img src="{!URLFOR($Resource.SLDS221, 'assets/images/avatar2.jpg')}" alt="" />
                 </span>
                 <span class="slds-icon__container slds-icon-standard-account" title="description of icon when needed">
-                    <svg aria-hidden="true" class="slds-icon">
-                        <use xlink:href="{!URLFOR($Resource.SLDS221, 'assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
-                    </svg>
+                	<c:SLDS_Icon name="account" svgClasses="slds-icon"/>
                     <span class="slds-assistive-text">Account Icon</span>
                 </span>
             </div>

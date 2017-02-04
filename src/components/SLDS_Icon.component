@@ -1,0 +1,10 @@
+<apex:component >
+    <apex:attribute name="name" type="String" required="true" description="Name of the icon" />
+    <apex:attribute name="svgClasses" type="String" description="Classes to apply to the SVG element" />
+
+	<svg aria-hidden="true" class="{!svgClasses}">
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" 
+			xlink:href="{!URLFOR($Resource.SLDS221, 'assets/icons/standard-sprite/svg/symbols.svg#')}{!name}">
+		</use>
+	</svg>
+</apex:component>
