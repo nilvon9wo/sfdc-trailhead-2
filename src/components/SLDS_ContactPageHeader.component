@@ -2,10 +2,19 @@
 	<div class="slds-page-header" role="banner">
 		<div class="slds-grid">
 			<div class="slds-col slds-has-flexi-truncate">
-				<p class="slds-text-title--caps slds-line-height--reset">Contacts</p>
-				<h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="My Contacts">
-					My Contacts
-				</h1>
+				<div class="slds-media">
+					<div class="slds-media__figure">
+						<span class="slds-avatar slds-avatar--large">
+							<img src="{!URLFOR($Resource.SLDS221, 'assets/images/avatar1.jpg')}" alt="" />
+						</span>
+					</div>
+					<div class="slds-media__body">
+						<p class="slds-text-title--caps slds-line-height--reset">Contacts</p>
+						<h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="My Contacts">
+							My Contacts
+						</h1> 
+					</div>
+				</div>
 			</div>
 			<div class="slds-col slds-no-flex slds-grid slds-align-top">
 				<div class="slds-button-group" role="group">
