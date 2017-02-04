@@ -1,13 +1,12 @@
 <aura:component >
     <aura:attribute name="expense" type="Expense__c" />
-    <!--
     <aura:registerEvent name="updateExpense" type="c:expensesItemUpdate"/>
-    -->
+
     <div class="slds-card">
         <div class="{!v.expense.Reimbursed__c == true ? 'slds-theme--success' : 'slds-theme--warning'}">
             <header class="slds-card__header slds-grid grid--flex-spread">
                 <a aura:id="expense" href="{!'/' + v.expense.Id}">
-                    <h3>{!v.expense.Name}</h3>
+                    <h3>{!v.expense.Name}: {!v.expense.Name__c}</h3>
                 </a>
             </header>
             
@@ -29,5 +28,4 @@
             </section>
         </div>
     </div>
-	
 </aura:component>

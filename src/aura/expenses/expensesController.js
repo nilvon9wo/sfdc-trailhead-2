@@ -6,12 +6,14 @@
         });
         $A.enqueueAction(action);
     },
+
+    handleCreateExpense : function(component, event, helper) {
+        var newExpense = event.getParam('expense');
+        helper.createExpense(component, newExpense);
+    },
     
-	clickCreateExpense : function(component, event, helper) {
-        if(helper.validateExpenseForm(component)) {
-            var newExpense = component.get('v.newExpense');
-            helper.createExpense(component, newExpense);
-            helper.resetExpenseForm(component);
-        }
-	}
+    handleUpdateExpense : function(component, event, helper) {
+        var updatedExpense = event.getParam('expense');
+        helper.updateExpense(component, updatedExpense);
+    }
 })

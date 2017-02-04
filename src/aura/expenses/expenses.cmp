@@ -1,16 +1,10 @@
 <aura:component controller="CAMP_ExpensesAuraCtrl">
-    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
-    
-    <aura:attribute name="newExpense" type="Expense__c"
-                    default="{ 
-                             'sobjectType': 'Expense__c',
-                             'Name': '',
-                             'Amount__c': 0,
-                             'Client__c': '',
-                             'Date__c': '',
-                             'Reimbursed__c': false
-           			}"/>
     <aura:attribute name="expenses" type="Expense__c[]"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    <aura:handler name="createExpense" event="c:expensesItemUpdate" action="{!c.handleCreateExpense}" />
+    <aura:handler name="updateExpense" event="c:expensesItemUpdate" action="{!c.handleUpdateExpense}" />
+    
                     
 	<div class="slds-page-header" role="banner">
         <div class="slds-grid">
@@ -21,53 +15,15 @@
         </div>
     </div>	
     
-    <div class="slds-col slds-col--padded slds-p-top--large">
-        <div aria-labelledby="newexpenseform">
-            <fieldset class="slds-box slds-theme--default slds-container--small">
-                <legend id="newexpenseform" class="slds-text-heading--small slds-p-vertical--medium">Add Expense</legend>
-            
-                <form class="slds-form--stacked">
-                    <div class="slds-form-element slds-is-required">
-                        <div class="slds-form-element__control">
-                            <ui:inputText aura:id="expname" label="Expense Name" class="slds-input" labelClass="slds-form-element__label"
-                                          value="{!v.newExpense.Name}" required="true" />
-                        </div>
-                    </div>
-                    
-                    <div class="slds-form-element slds-is-required">
-                        <div class="slds-form-element__control">
-                            <ui:inputNumber aura:id="amount" label="Amount" class="slds-input" labelClass="slds-form-element__label"
-                                            value="{!v.newExpense.Amount__c}" required="true"/>
-                        </div>
-                    </div>
+    <c:expenseForm />
     
-                    <div class="slds-form-element">
-                        <div class="slds-form-element__control">
-                            <ui:inputText aura:id="client" label="Client" class="slds-input" labelClass="slds-form-element__label"
-                                            value="{!v.newExpense.Client__c}" placeholder="ABC Co."/>
-                        </div>
-                    </div>
-    
-                    <div class="slds-form-element">
-                        <div class="slds-form-element__control">
-                            <ui:inputDate aura:id="expdate" label="Expense Date"  class="slds-input" labelClass="slds-form-element__label"
-                                            value="{!v.newExpense.Date__c}" displayDatePicker="true"/>
-                        </div>
-                    </div>
-    
-                    <div class="slds-form-element">
-                        <div class="slds-form-element__control">
-                            <ui:inputCheckbox aura:id="reimbursed" label="Reimbursed?" class="slds-checkbox" labelClass="slds-form-element__label"
-                                            value="{!v.newExpense.Reimbursed__c}" />
-                        </div>
-                    </div>
-    
-                    <div class="slds-form-element">
-                            <ui:button label="Reimbursed?" class="slds-button slds-button--brand" press="{!c.clickCreateExpense}" />
-                    </div>
-                </form>
-			</fieldset>
+    <div class="slds-grid slds-m-top--large">
+        <div class="slds-col slds-col-rule--right slds-p-around--small slds-size--8-of-12">
+    		<c:expenseList expenses="{!v.expenses}" />        
         </div>
     </div>
-    <c:expenseList expenses="{!v.expenses}" />
+    
+    <div class="slds-col slds-p-left--large slds-size--4-of-12">
+    </div>
+    
 </aura:component>
