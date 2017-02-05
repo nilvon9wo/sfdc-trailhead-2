@@ -2620,6 +2620,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SF1_ResponsivePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SF1_UserQuickBusinessCard</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
