@@ -1946,6 +1946,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Threat_Tier__mdt.Account_Tier__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Threat_Tier__mdt.Vacation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Trail__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2128,6 +2138,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Threat_Tier__mdt-Threat Tier Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Trail__c-Trail Layout</layout>
