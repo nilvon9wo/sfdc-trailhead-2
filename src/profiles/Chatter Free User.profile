@@ -2216,6 +2216,14 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SF1_AccountsHandlerJs</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_QuckAccount</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SLDS_AccountListView</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

@@ -31,7 +31,7 @@
     function createAccountResponseHandler(error) {
     	if (error) {
             alert (error.message);
-            return false;
+            return null;
     	}
     	else {
     		updateOutputDiv();

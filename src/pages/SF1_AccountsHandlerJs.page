@@ -1,0 +1,24 @@
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" standardStylesheets="false" controller="CMA_HotelRemoteSelector">
+<script>
+   function createAccount() {
+	var accountName = document.getElementById('accountName').value;
+   	var newAccount = new SObjectModel.Account();
+   	var record = { Name: accountName };
+   	newAccount.create(record, createAccountResponseHandler);
+   }
+   
+   function createAccountResponseHandler(error, records) {
+   	if (error) {
+           alert (error.message);
+           return null;
+   	}
+   	else {
+   		var account = records[0];
+   		if (sforce && sforce.one) {
+   			sforce.one.navigateToSObject(account);
+   		}
+   		return account;
+   	}
+   }
+</script>
+</apex:page>

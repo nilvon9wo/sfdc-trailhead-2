@@ -1,0 +1,12 @@
+<apex:page doctype="html-5.0" title="Create Account">
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Account" fields="Id, Name" />
+    </apex:remoteObjects>
+    <div class="mypage">
+        <label for="accountName">Account Name:
+            <input type="text" id="accountName" />
+        </label>
+        <button onclick="createAccount()">Create Account</button>
+    </div>
+    <apex:include pageName="SF1_AccountsHandlerJs"/>
+</apex:page>
