@@ -2576,6 +2576,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>ContactForm</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>FLOW_QuickAccount</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
