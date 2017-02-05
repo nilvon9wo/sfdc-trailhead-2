@@ -2564,6 +2564,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>FLOW_QuickAccount</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>FlightSystemsChecklist</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -2581,6 +2585,14 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>SF1_EmailHandlerJs</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_OpportunityClose</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_OpportunityHandlerJs</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -2617,6 +2629,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>SLDS_ImageSamples</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ShowAssistantInfo</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>

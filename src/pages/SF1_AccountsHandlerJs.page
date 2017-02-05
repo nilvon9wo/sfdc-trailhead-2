@@ -1,4 +1,4 @@
-<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" standardStylesheets="false" controller="CMA_HotelRemoteSelector">
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" standardStylesheets="false" >
 <script>
 	Sfdc.canvas.publisher.subscribe({
 		name: 'publisher.showPanel', 

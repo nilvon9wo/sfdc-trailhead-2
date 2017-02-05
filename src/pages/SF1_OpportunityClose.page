@@ -1,0 +1,19 @@
+<apex:page docType="html-5.0" standardController="Opportunity" title="Close Opportunity">
+    <apex:stylesheet value="{!URLFOR($Resource.SF1_OpportunityAction_CSS)}" />    
+    <script src='/canvas/sdk/js/publisher.js'></script>
+
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Opportunity" fields="Id,Name,Discount_Percent__c" />
+    </apex:remoteObjects>    
+    
+    <div class="mypage">
+        <button onclick="closeOpportunity('Closed Won')">Won</button>
+        <button onclick="closeOpportunity('Closed Lost')">Lost</button>
+    </div>
+    
+    <script>
+        var opportunityId = '{!Opportunity.Id}';
+        var opportunityDiscount = +'{!Opportunity.Discount_Percent__c}' || 0;
+    </script>    
+    <apex:include pageName="SF1_OpportunityHandlerJs"/>
+</apex:page>

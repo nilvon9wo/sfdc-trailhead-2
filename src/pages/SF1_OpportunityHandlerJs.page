@@ -1,0 +1,26 @@
+<apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" >
+<script>
+    function closeOpportunity(stageName) {
+        var opportunity = new SObjectModel.Opportunity();
+        var record = {
+            Discount_Percent__c: opportunityDiscount,
+            StageName: stageName
+        };
+        opportunity.update([opportunityId], record , handleCloseResponse);
+    }
+    
+    function handleCloseResponse(error) {
+        if (error) {
+            alert(error.message);
+            return false;
+        }
+        else {
+            Sfdc.canvas.publisher.publish({
+                name: 'publisher.close',
+                payload: {refresh: 'true'}
+            });
+            return true;
+        }
+    }
+</script>
+</apex:page>
