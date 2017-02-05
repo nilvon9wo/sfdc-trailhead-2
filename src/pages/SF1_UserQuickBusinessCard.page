@@ -1,0 +1,14 @@
+<apex:page doctype="html-5.0" title="Business Card">
+  {!$User.FirstName} {!$User.LastName}<br/>
+  {!$User.Title}<br/>
+  {!$User.Email}<br/>
+  {!$User.Phone}<br/>
+
+   <div class="business-card">
+       <label for="targetEmail">Email To:
+           <input type="text" id="targetEmail" />
+       </label>
+   </div>
+   <script src='/canvas/sdk/js/publisher.js'></script>
+   <apex:include pageName="SF1_EmailHandlerJs"/> 
+</apex:page>

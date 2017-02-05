@@ -1,0 +1,13 @@
+<apex:page doctype="html-5.0" title="Create Account">
+    <apex:stylesheet value="{!URLFOR($Resource.SF1_QuickAccount_CSS)}" />
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Account" fields="Id, Name" />
+    </apex:remoteObjects>
+    <div class="mypage">
+        <label for="accountName">Account Name:
+            <input type="text" id="accountName" />
+        </label>
+    </div>
+    <script src='/canvas/sdk/js/publisher.js'></script>
+    <apex:include pageName="SF1_AccountsHandlerJs"/>
+</apex:page>
