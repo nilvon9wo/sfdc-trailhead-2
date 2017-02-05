@@ -1,0 +1,11 @@
+<apex:page standardController="Contact">
+  <apex:form >
+      Hello,<br/>
+      
+      <label for="firstName">First Name: 
+          <apex:inputField label="First Name" value="{!Contact.FirstName}" /><br />
+      </label>
+      
+      <apex:commandButton value="Submit" action="{!save}" />
+  </apex:form>
+</apex:page>

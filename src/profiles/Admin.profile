@@ -2576,10 +2576,6 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>ContactForm</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>FLOW_QuickAccount</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -2681,6 +2677,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>StationCheck</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>TH_ContactForm</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
