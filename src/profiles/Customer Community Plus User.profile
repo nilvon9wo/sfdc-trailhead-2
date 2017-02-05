@@ -2359,6 +2359,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SF1_ResponsivePage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SF1_UserQuickBusinessCard</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

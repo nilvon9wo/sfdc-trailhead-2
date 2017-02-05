@@ -1,0 +1,9 @@
+<apex:page >
+  <apex:stylesheet value="{!URLFOR($Resource.SF1_SfdcMobileRecommendations_CSS)}" />
+  <div class="content-block">
+      This block is on the top on the phone, and on the left on larger screens.
+  </div>
+  <div class="content-block">
+      This block is on the bottom on the phone, and on the right on larger screens.
+  </div>
+</apex:page>
