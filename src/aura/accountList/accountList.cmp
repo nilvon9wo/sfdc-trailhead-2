@@ -1,0 +1,41 @@
+<aura:component controller="TH_AccountsAuraCtrl">
+    <aura:attribute name="accounts" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <table class="slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout">
+        <thead>
+            <tr class="slds-text-heading--label">
+                <th scope="col"><div class="slds-truncate" title="ID">ID</div></th>
+                <th scope="col"><div class="slds-truncate" title="Name">Name</div></th>
+                <th scope="col"><div class="slds-truncate" title="Type">Type</div></th>
+                <th scope="col"><div class="slds-truncate" title="Number of Employees">Number of Employees</div></th>
+                <th scope="col"><div class="slds-truncate" title="Ticker Symbol">Ticker Symbol</div></th>
+                <th scope="col"><div class="slds-truncate" title="Phone">Phone</div></th>
+                <th scope="col"><div class="slds-truncate" title="Delete">Delete</div></th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.accounts}" var="account">
+                <tr>
+                    <th scope="row"><div class="slds-truncate" title="{!account.Id}">{!account.Id}</div></th>
+                    <td><div class="slds-truncate" title="{!account.Name}">{!account.Name}</div></td>
+                    <td><div class="slds-truncate" title="{!account.Type}">{!account.Type}</div></td>
+                    <td><div class="slds-truncate" title="{!account.NumberOfEmployees}">{!account.NumberOfEmployees}</div></td>
+                    <td><div class="slds-truncate" title="{!account.TickerSymbol}">{!account.TickerSymbol}</div></td>
+                    <td><div class="slds-truncate" title="{!account.Phone}">{!account.Phone}</div></td>
+                    <td>
+						<form class="account-form" onsubmit="{!c.deleteAccount}">
+			              <input type="hidden" value="{!account.Name}" class="account-name" />
+			              <lightning:button label="Delete"
+			                                iconName="utility:delete"
+			                                iconPosition="left"
+			                                variant="destructive"
+		                                />
+			            </form>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+	
+</aura:component>
