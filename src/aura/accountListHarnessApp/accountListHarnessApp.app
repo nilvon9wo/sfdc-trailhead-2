@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:AccountList />
+    <c:accountList />
 </aura:application>

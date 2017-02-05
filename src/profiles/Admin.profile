@@ -96,10 +96,6 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>AccountsController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>CAMP_CampingListAuraCtrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -237,6 +233,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>TEST_SObjectPrefixHelper</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>TH_AccountsAuraCtrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

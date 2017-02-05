@@ -1,16 +1,16 @@
-public class AccountsController {
+public class TH_AccountsAuraCtrl {
 	DB_AccountSelector accountSelector;
 	
-	public AccountsController(DB_AccountSelector accountSelector) {
+	public TH_AccountsAuraCtrl(DB_AccountSelector accountSelector) {
 		this.accountSelector = accountSelector;
 	}
-	public AccountsController() {
+	public TH_AccountsAuraCtrl() {
 		this(new DB_AccountSelector());
 	}
 	
 	@AuraEnabled
 	public static List<Account> getAccounts() {
-		return (new AccountsController()).selectAll(); 
+		return (new TH_AccountsAuraCtrl()).selectAll(); 
 	}    
 
 	private List<Account> selectAll() { 
