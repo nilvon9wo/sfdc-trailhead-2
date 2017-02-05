@@ -22,5 +22,7 @@
     <tab>standard-Case</tab>
     <tab>standard-News</tab>
     <tab>standard-ForecastingLightning</tab>
+    <tab>Ionic_Contact_List</tab>
+    <tab>Bootstrap_Contact_List</tab>
     <uiType>Lightning</uiType>
 </CustomApplication>

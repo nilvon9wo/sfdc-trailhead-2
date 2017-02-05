@@ -20,4 +20,12 @@
         <name>Dashboards</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Ionic_Contact_List</name>
+        <type>CustomTab</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Bootstrap_Contact_List</name>
+        <type>CustomTab</type>
+    </appMenuItems>
 </AppMenu>

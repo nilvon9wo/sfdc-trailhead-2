@@ -2208,6 +2208,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>Boots_ContactList</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>CMA_HotelMapJs</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -2329,6 +2333,10 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>Bootstrap_Contact_List</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Camping_Item__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -2354,6 +2362,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Hotel__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Ionic_Contact_List</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
