@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Satisfaction Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Satisfaction Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction --></label>
+        <name>Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>No Opinion</masterLabel>
+            <translation><!-- No Opinion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Satisfied</masterLabel>
+            <translation><!-- Somewhat Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfied</masterLabel>
+            <translation><!-- Unsatisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>Service__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation><!-- Needs Improvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Opinion</masterLabel>
+            <translation><!-- No Opinion --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

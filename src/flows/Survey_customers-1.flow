@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <choices>
+        <name>Participate_No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>No</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Participate_Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Yes</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Want_to_Participate</name>
+        <label>Want to Participate?</label>
+        <locationX>330</locationX>
+        <locationY>48</locationY>
+        <defaultConnector>
+            <targetReference>Thank_Customer</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Customer_Response</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Participate_Yes</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Survey_Customer</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Script for gathering customer satisfaction data</description>
+    <dynamicChoiceSets>
+        <name>Satisfaction_choices</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Satisfaction__c</picklistField>
+        <picklistObject>Customer_Satisfaction_Survey__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Service_choices</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Service__c</picklistField>
+        <picklistObject>Customer_Satisfaction_Survey__c</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>Survey customers {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Survey customers</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Survey_Record</name>
+        <label>Create Survey Record</label>
+        <locationX>540</locationX>
+        <locationY>163</locationY>
+        <connector>
+            <targetReference>Thank_Customer</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Comments__c</field>
+            <value>
+                <elementReference>OtherComments</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Customer_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Satisfaction__c</field>
+            <value>
+                <elementReference>Satisfaction</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Service__c</field>
+            <value>
+                <elementReference>Service</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Customer_Satisfaction_Survey__c</object>
+    </recordCreates>
+    <screens>
+        <name>Greet_Customer</name>
+        <label>Greet Customer</label>
+        <locationX>131</locationX>
+        <locationY>46</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Want_to_Participate</targetReference>
+        </connector>
+        <fields>
+            <name>WelcomeMessage</name>
+            <fieldText>Hello. My name is [Your First Name] from Acme Wireless Customer Relations.
+
+According to our records, you are currently a Preferred Repair customer. We are very interested in hearing about your experience with this service. Do you have time to answer a few short questions?</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Customer_Response</name>
+            <choiceReferences>Participate_Yes</choiceReferences>
+            <choiceReferences>Participate_No</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Customer Response</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Survey_Customer</name>
+        <label>Survey Customer</label>
+        <locationX>535</locationX>
+        <locationY>44</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Create_Survey_Record</targetReference>
+        </connector>
+        <fields>
+            <name>ParticipationThanks</name>
+            <fieldText>Thank you for agreeing to participate in our survey.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Customer_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Before we begin, can you confirm your name?</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Service</name>
+            <choiceReferences>Service_choices</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Of the following options, how would you rate your interactions with the Preferred Repair team?</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Satisfaction</name>
+            <choiceReferences>Satisfaction_choices</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Of the following options, how satisfied are you with Acme&apos;s Preferred Repair service?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>OtherComments</name>
+            <fieldText>Do you have any other comments you&apos;d like to share with us?</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Thank_Customer</name>
+        <label>Thank Customer</label>
+        <locationX>541</locationX>
+        <locationY>288</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ThankCustomer</name>
+            <fieldText>Thank you for your time. On behalf of everyone at Acme Wireless, we&apos;d like to thank you for being a customer. Have a great day!</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Greet_Customer</startElementReference>
+</Flow>

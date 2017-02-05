@@ -9,6 +9,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>Customer_Satisfaction_Surveys</application>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>TH_Charitable</application>
         <visible>false</visible>
     </applicationVisibilities>
@@ -1266,6 +1270,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Customer_Satisfaction_Survey__c.Comments__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Satisfaction_Survey__c.Satisfaction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Customer_Satisfaction_Survey__c.Service__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Description</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2117,6 +2136,10 @@
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>Customer_Satisfaction_Survey__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Expense__c</tab>
         <visibility>None</visibility>
     </tabSettings>
@@ -2170,6 +2193,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Speaker__c</tab>
+        <visibility>None</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Survey_Customers_webtab</tab>
         <visibility>None</visibility>
     </tabSettings>
     <tabSettings>
