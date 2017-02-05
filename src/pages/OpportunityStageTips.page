@@ -1,0 +1,32 @@
+<apex:page docType="html-5.0" standardController="Opportunity" title="Opportunity Stage Tips">
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Prospecting',true,false)}">
+        Sales prospecting is where the salesperson makes their money.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Qualification',true,false)}">
+        The first qualification for a historian is to have no ability to invent.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Needs Analysis',true,false)}">
+        Serendipity. Look for something, find something else, and realize that what you  have found is more suited to your needs than what you thought you were looking for.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Value Proposition',true,false)}">
+        Your customers are the judge, jury, and executioner of your value proposition. They will be merciless if you do not find fit!
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Id. Decision Makers',true,false)}">
+        When making a decision of minor importance, I have always found it advantageous to consider all the pros and cons. In vital matters, however, such as the choice of a mate or a profession, the decision should come from the unconscious, from somewhere within ourselves. In the important decisions of personal life, we should be governed, I think, by the deep inner needs of our nature.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Perception Analysis',true,false)}">
+        The one characteristic of authentic power that most people overlook is humbleness. It is important for many reasons. A humble person walks in a friendly world. He or she sees friends everywhere he or she looks, wherever he or she goes, whomever he or she meets. His or her perception goes beyond the shell of appearance and into essence.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Proposal/Price Quote',true,false)}">
+        Tell him yes. Even if you are dying of fear, even if you are sorry later, because whatever you do, you will be sorry all the rest of your life if you say no.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Negotiation/Review',true,false)}">
+        Everything is negotiable. Whether or not the negotiation is easy is another thing.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Closed Won',true,false)}">
+        Violence as a way of achieving racial justice is both impractical and immoral. I am not unmindful of the fact that violence often brings about momentary results. Nations have frequently won their independence in battle. But in spite of temporary victories, violence never brings permanent peace.
+   </apex:outputPanel>
+   <apex:outputPanel rendered="{!if(Opportunity.stagename=='Closed Lost',true,false)}">
+        Not all those who wander are lost.
+   </apex:outputPanel>
+</apex:page>

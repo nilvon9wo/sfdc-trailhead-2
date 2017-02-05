@@ -2382,7 +2382,23 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>OpportunityStageTips</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_AccountQuckCreate</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_AccountStockQuote</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SF1_AccountsHandlerJs</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_ContactShowAssistantInfo</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -2403,6 +2419,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>SF1_QuickBusinessCard</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_UserQuickBusinessCard</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

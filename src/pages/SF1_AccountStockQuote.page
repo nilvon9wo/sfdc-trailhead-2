@@ -1,0 +1,9 @@
+<apex:page docType="html-5.0" standardController="Account">
+    <apex:stylesheet value="{!URLFOR($Resource.SF1_AccountStockQuote_CSS)}" />
+    
+    <div class="mypage">
+        Stock:
+        <div class="quote">$42.00</div>
+        <div class="delta">+1.32%</div>
+    </div>
+</apex:page>
