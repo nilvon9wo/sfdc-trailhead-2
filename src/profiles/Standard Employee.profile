@@ -2382,7 +2382,15 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>SF1_EmailHandlerJs</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SF1_QuckAccount</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SF1_QuickBusinessCard</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
