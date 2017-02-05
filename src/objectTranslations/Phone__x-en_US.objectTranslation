@@ -23,6 +23,7 @@
     <fields>
         <label><!-- UUID --></label>
         <name>UUID__c</name>
+        <relationshipLabel><!-- Phones --></relationshipLabel>
     </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
