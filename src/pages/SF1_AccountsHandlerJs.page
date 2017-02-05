@@ -1,24 +1,39 @@
 <apex:page docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" showHeader="false" standardStylesheets="false" controller="CMA_HotelRemoteSelector">
 <script>
+	Sfdc.canvas.publisher.subscribe({
+		name: 'publisher.showPanel', 
+		onData: function(event) {
+			Sfdc.canvas.publisher.publish({
+				name: 'publisher.setValidForSubmit',
+				payload: 'true'
+			});
+		}
+	});
+	
+	Sfdc.canvas.publisher.subscribe({
+		name: 'publisher.post',
+		onData: createAccount
+	});
+	
    function createAccount() {
-	var accountName = document.getElementById('accountName').value;
-   	var newAccount = new SObjectModel.Account();
-   	var record = { Name: accountName };
-   	newAccount.create(record, createAccountResponseHandler);
+		var accountName = document.getElementById('accountName').value;
+	   	var newAccount = new SObjectModel.Account();
+	   	var record = { Name: accountName };
+	   	newAccount.create(record, createAccountResponseHandler);
    }
    
-   function createAccountResponseHandler(error, records) {
-   	if (error) {
-           alert (error.message);
-           return null;
-   	}
-   	else {
-   		var account = records[0];
-   		if (sforce && sforce.one) {
-   			sforce.one.navigateToSObject(account);
-   		}
-   		return account;
-   	}
+   function createAccountResponseHandler(error) {
+	   	if (error) {
+	           alert (error.message);
+	           return false;
+	   	}
+	   	else {
+	   		Sfdc.canvas.publisher.publish({
+	   			name: 'publisher.close',
+	   			payload: {refresh: 'true'}
+	   		});
+	   		return true;
+	   	}
    }
 </script>
 </apex:page>

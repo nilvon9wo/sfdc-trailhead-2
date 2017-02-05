@@ -7,7 +7,7 @@
         <label for="accountName">Account Name:
             <input type="text" id="accountName" />
         </label>
-        <button onclick="createAccount()">Create Account</button>
     </div>
+    <script src='/canvas/sdk/js/publisher.js'></script>
     <apex:include pageName="SF1_AccountsHandlerJs"/>
 </apex:page>
