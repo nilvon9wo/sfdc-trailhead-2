@@ -91,10 +91,9 @@
         <isSortingDisabled>false</isSortingDisabled>
         <label>UUID</label>
         <length>128</length>
-        <referenceTargetField>User.Phone_UUID__c</referenceTargetField>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Phones</relationshipName>
-        <type>IndirectLookup</type>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <label>Phone</label>
     <pluralLabel>Phones</pluralLabel>
