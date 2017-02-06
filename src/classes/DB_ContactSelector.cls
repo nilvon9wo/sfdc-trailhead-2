@@ -1,15 +1,23 @@
 public class DB_ContactSelector extends fflib_SObjectSelector {
     public List<Schema.SObjectField> getSObjectFieldList() {
     	return new List<Schema.SObjectField> {
+    		Contact.id,
+    		Contact.description,
+    		Contact.email,
     		Contact.name,
     		Contact.phone,
-    		Contact.email,
-    		Contact.description
+    		Contact.title
     	};
     }
     
     public Schema.SObjectType getSObjectType() {
     	return Contact.sObjectType;
+    }
+    
+    public List<Contact> selectAll() {
+    	return (List<Contact>) Database.query(
+        	this.newQueryFactory().toSOQL()
+        );
     }
     
     public List<Contact> selectByDepartment(String department) {

@@ -254,6 +254,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TH_ContactsAuraCtrl</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TH_EmailSendingService</apexClass>
         <enabled>true</enabled>
     </classAccesses>
