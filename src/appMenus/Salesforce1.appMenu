@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AppMenu xmlns="http://soap.sforce.com/2006/04/metadata">
     <appMenuItems>
-        <name>MyDay</name>
-        <type>StandardAppMenuItem</type>
+        <name>Bootstrap_Contact_List</name>
+        <type>CustomTab</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Tasks</name>
+        <name>Dashboards</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
@@ -13,19 +13,19 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Search</name>
-        <type>StandardAppMenuItem</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Dashboards</name>
-        <type>StandardAppMenuItem</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>Ionic_Contact_List</name>
         <type>CustomTab</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Bootstrap_Contact_List</name>
-        <type>CustomTab</type>
+        <name>Search</name>
+        <type>StandardAppMenuItem</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Tasks</name>
+        <type>StandardAppMenuItem</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>MyDay</name>
+        <type>StandardAppMenuItem</type>
     </appMenuItems>
 </AppMenu>

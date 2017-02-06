@@ -1,0 +1,27 @@
+<aura:component >
+    <aura:attribute name="account" type="Account" />
+    <aura:registerEvent name="accountSelected" type="c:accountSelected" />
+    
+    <tr>
+        <th scope="row"><div class="slds-truncate" title="{!v.account.Id}">{!v.account.Id}</div></th>
+        <td>
+            <div class="slds-truncate" title="{!v.account.Name}">
+                <a onclick="{!c.accountSelected}">{!v.account.Name}</a>
+            </div>
+        </td>
+        <td><div class="slds-truncate" title="{!v.account.Type}">{!v.account.Type}</div></td>
+        <td><div class="slds-truncate" title="{!v.account.NumberOfEmployees}">{!v.account.NumberOfEmployees}</div></td>
+        <td><div class="slds-truncate" title="{!v.account.TickerSymbol}">{!v.account.TickerSymbol}</div></td>
+        <td><div class="slds-truncate" title="{!v.account.Phone}">{!v.account.Phone}</div></td>
+        <td>
+            <form class="account-form" onsubmit="{!c.deleteAccount}">
+                <input type="hidden" value="{!v.account.Name}" class="account-name" />
+                <lightning:button label="Delete"
+                                  iconName="utility:delete"
+                                  iconPosition="left"
+                                  variant="destructive"
+                                  />
+            </form>
+        </td>
+    </tr>
+</aura:component>

@@ -189,6 +189,16 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Location__c</fullName>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <scale>7</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Location</type>
+    </fields>
+    <fields>
         <fullName>My_Date__c</fullName>
         <externalId>false</externalId>
         <label>My Date</label>

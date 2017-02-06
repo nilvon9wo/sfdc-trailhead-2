@@ -1,0 +1,13 @@
+.THIS {
+    border-bottom: solid 1px #DDDDDD;
+}
+
+.THIS a {
+    color: inherit;
+    display: block;
+    padding: 20px;
+}
+
+.THIS a:active {
+    background-color: #E8F4FB;
+}
