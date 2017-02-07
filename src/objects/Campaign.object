@@ -63,6 +63,17 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Chapter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Chapter</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Class Sessions</relationshipLabel>
+        <relationshipName>Class_Sessions</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Description</fullName>
     </fields>
     <fields>
@@ -109,6 +120,16 @@
     </fields>
     <fields>
         <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>Instructor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Instructor</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Class_Sessions</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>IsActive</fullName>

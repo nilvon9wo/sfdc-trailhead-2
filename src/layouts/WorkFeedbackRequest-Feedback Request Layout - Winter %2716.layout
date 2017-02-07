@@ -82,6 +82,15 @@
     <relatedLists>
         <relatedList>RelatedFeedbackRelatedList</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>ImageUrl</fields>
+        <fields>Definition</fields>
+        <fields>Message</fields>
+        <fields>Recipient</fields>
+        <fields>CreatedDate</fields>
+        <fields>Giver</fields>
+        <relatedList>RecentWorkThanksRelatedList</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
-        <application>Account_Geolocation_App</application>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>Camping</application>
         <visible>false</visible>
     </applicationVisibilities>
@@ -29,15 +25,15 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>TH_Project_Tracker</application>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>TH_Recruiting</application>
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Trailblazer</application>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Workshop_Management_System</application>
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
@@ -161,6 +157,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DB_FeedItemDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>DB_HotelSelector</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -194,6 +194,30 @@
     </classAccesses>
     <classAccesses>
         <apexClass>DB_StreamingChannelDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_WorkBadgeDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_WorkBadgeDefinitionSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_WorkThanksDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>DB_WorkThanksShareDAO</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GiveWorkThanksAction</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>GiveWorkThanksRequest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -763,6 +787,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Campaign.Chapter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Campaign.Description</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -839,6 +868,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Campaign.HierarchyNumberSent</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Campaign.Instructor__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
