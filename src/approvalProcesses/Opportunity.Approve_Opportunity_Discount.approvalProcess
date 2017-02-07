@@ -23,7 +23,7 @@
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
         <criteriaItems>
-            <field>Opportunity.Discount_Percent__c</field>
+            <field>Opportunity.Discount_Percentage__c</field>
             <operation>greaterThan</operation>
             <value>0.4</value>
         </criteriaItems>

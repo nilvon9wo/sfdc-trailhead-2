@@ -3,7 +3,7 @@
     <script src='/canvas/sdk/js/publisher.js'></script>
 
     <apex:remoteObjects >
-        <apex:remoteObjectModel name="Opportunity" fields="Id,Name,Discount_Percent__c" />
+        <apex:remoteObjectModel name="Opportunity" fields="Id,Name,Discount_Percentage__c" />
     </apex:remoteObjects>    
     
     <div class="mypage">

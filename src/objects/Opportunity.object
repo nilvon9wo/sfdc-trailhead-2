@@ -163,11 +163,14 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Discount_Percent__c</fullName>
+        <fullName>Discount_Percentage__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Displays the percentage to be subtracted from the total amount of the opportunity.</description>
         <externalId>false</externalId>
-        <label>Discount Percent</label>
+        <inlineHelpText>If the customer is getting a discount on this opportunity, enter the amount here. For example, if the discount is 10%, enter the whole number 10.</inlineHelpText>
+        <label>Discount Percentage</label>
         <precision>18</precision>
-        <required>true</required>
+        <required>false</required>
         <scale>0</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -175,16 +178,17 @@
     </fields>
     <fields>
         <fullName>Discounted_Amount__c</fullName>
+        <description>Calculates the opportunity amount after any discount has been applied.</description>
         <externalId>false</externalId>
-        <formula>ROUND(Amount - (Amount * 0.12), 2)</formula>
+        <formula>Amount * (1 -  Discount_Percentage__c )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Opportunity amount after discount has been applied.</inlineHelpText>
         <label>Discounted Amount</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
         <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>ExpectedRevenue</fullName>
@@ -410,6 +414,26 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Calculate_Discount_button</fullName>
+        <availability>online</availability>
+        <description>Calculates a discount based on annual revenue</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Calculate Discount</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/flow/Calculate_discounts?AccountID={!Opportunity.AccountId}&amp;OpportunityID={!Opportunity.Id}</url>
+    </webLinks>
     <webLinks>
         <fullName>DeliveryStatus</fullName>
         <availability>online</availability>

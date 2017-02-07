@@ -51,7 +51,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Discount_Percent__c</field>
+                <field>Discount_Percentage__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
