@@ -55,6 +55,7 @@
     <fields>
         <fullName>Comments__c</fullName>
         <description>Free-form comments from the customer</description>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Comments</label>
         <length>32768</length>

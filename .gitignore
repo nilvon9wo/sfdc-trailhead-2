@@ -1,6 +1,7 @@
 .project
 .settings/
 .idea/
+etc/secrets/
 etc/soap/Exploring-Salesforce-SOAP-API-soapui-project.xml
 IlluminatedCloud/
 projectFilesBackup/

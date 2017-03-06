@@ -54,6 +54,7 @@
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Name__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Name</label>
         <length>255</length>

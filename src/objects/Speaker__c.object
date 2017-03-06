@@ -58,6 +58,7 @@
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Bio__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Bio</label>
         <length>32768</length>
@@ -68,6 +69,7 @@
     </fields>
     <fields>
         <fullName>Email__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Email</label>
         <required>false</required>
@@ -78,6 +80,7 @@
     </fields>
     <fields>
         <fullName>First_Name__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>First Name</label>
         <length>30</length>
@@ -89,6 +92,7 @@
     </fields>
     <fields>
         <fullName>Last_Name__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Last Name</label>
         <length>30</length>
@@ -100,6 +104,7 @@
     </fields>
     <fields>
         <fullName>Picture_Path__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Picture Path</label>
         <length>255</length>
@@ -111,6 +116,7 @@
     </fields>
     <fields>
         <fullName>Picture__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <formula>IMAGE(Picture_Path__c, &apos;&apos;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

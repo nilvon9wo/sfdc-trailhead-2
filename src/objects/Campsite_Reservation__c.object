@@ -68,6 +68,7 @@
     </fields>
     <fields>
         <fullName>End_Date__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>End Date</label>
         <required>false</required>
@@ -77,6 +78,7 @@
     </fields>
     <fields>
         <fullName>Start_Date__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Start Date</label>
         <required>false</required>

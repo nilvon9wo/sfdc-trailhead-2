@@ -87,6 +87,7 @@
     </fields>
     <fields>
         <fullName>Account_Website__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <formula>HYPERLINK(&quot;http://www.VeryImportantWebsite.com&quot;, &quot;Very Important Website&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -160,6 +161,7 @@
     </fields>
     <fields>
         <fullName>Date_First_Opportunity_Created__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Date First Opportunity Created</label>
         <summarizedField>Opportunity.CreatedDate</summarizedField>
@@ -169,6 +171,7 @@
     </fields>
     <fields>
         <fullName>Description</fullName>
+        <encrypted>false</encrypted>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
@@ -177,6 +180,7 @@
     </fields>
     <fields>
         <fullName>Fax</fullName>
+        <encrypted>false</encrypted>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
@@ -200,6 +204,7 @@
     </fields>
     <fields>
         <fullName>My_Date__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>My Date</label>
         <required>false</required>
@@ -216,6 +221,7 @@
     </fields>
     <fields>
         <fullName>Name</fullName>
+        <encrypted>false</encrypted>
         <trackFeedHistory>true</trackFeedHistory>
     </fields>
     <fields>
@@ -250,6 +256,7 @@
     </fields>
     <fields>
         <fullName>Phone</fullName>
+        <encrypted>false</encrypted>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
@@ -268,6 +275,7 @@
     </fields>
     <fields>
         <fullName>SLAExpirationDate__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>SLA Expiration Date</label>
         <required>false</required>
@@ -276,6 +284,7 @@
     </fields>
     <fields>
         <fullName>SLASerialNumber__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>SLA Serial Number</label>
         <length>10</length>
@@ -378,6 +387,7 @@
     </fields>
     <fields>
         <fullName>Web_Site__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Web Site</label>
         <required>false</required>
@@ -386,6 +396,7 @@
     </fields>
     <fields>
         <fullName>Website</fullName>
+        <encrypted>false</encrypted>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>

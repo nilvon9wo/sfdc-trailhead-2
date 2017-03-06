@@ -67,6 +67,7 @@
     <fields>
         <fullName>Phone_UUID__c</fullName>
         <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>Phone UUID</label>
         <length>15</length>

@@ -72,6 +72,7 @@
     <fields>
         <fullName>Id__c</fullName>
         <description>Id</description>
+        <encrypted>false</encrypted>
         <externalDeveloperName>Id</externalDeveloperName>
         <externalId>false</externalId>
         <isFilteringDisabled>false</isFilteringDisabled>
@@ -86,6 +87,7 @@
     <fields>
         <fullName>Name__c</fullName>
         <description>Name</description>
+        <encrypted>false</encrypted>
         <externalDeveloperName>Name</externalDeveloperName>
         <externalId>false</externalId>
         <isFilteringDisabled>false</isFilteringDisabled>

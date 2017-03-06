@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_New_Account_Notification</name>
+        <label>Send New Account Notification</label>
+        <locationX>773</locationX>
+        <locationY>791</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>NewAccountEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>New Account Assignments</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>{!User2.Email}, {!User3.Email}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Add_Values_to_Updated_Collection</name>
+        <label>Add Values to Updated Collection</label>
+        <locationX>1008</locationX>
+        <locationY>590</locationY>
+        <assignmentItems>
+            <assignToReference>coll_updatedAccts</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>accountLoopVar</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Reassign_User1s_Accounts</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_to_User_2</name>
+        <label>Assign to User 2</label>
+        <locationX>933</locationX>
+        <locationY>393</locationY>
+        <assignmentItems>
+            <assignToReference>accountLoopVar.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>User2.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Values_to_Updated_Collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_to_User_3</name>
+        <label>Assign to User 3</label>
+        <locationX>1143</locationX>
+        <locationY>442</locationY>
+        <assignmentItems>
+            <assignToReference>accountLoopVar.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>User3.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Values_to_Updated_Collection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>What_s_the_Account_Rating</name>
+        <label>What’s the Account Rating?</label>
+        <locationX>1035</locationX>
+        <locationY>276</locationY>
+        <defaultConnector>
+            <targetReference>Assign_to_User_3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Warm or Cold</defaultConnectorLabel>
+        <rules>
+            <name>Hot</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>accountLoopVar.Rating</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hot</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_to_User_2</targetReference>
+            </connector>
+            <label>Hot</label>
+        </rules>
+    </decisions>
+    <description>Transfer ownership of accounts when a user leaves his/her role.</description>
+    <interviewLabel>Reassign accounts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reassign accounts</label>
+    <loops>
+        <name>Reassign_User1s_Accounts</name>
+        <label>Reassign Accounts</label>
+        <locationX>528</locationX>
+        <locationY>385</locationY>
+        <assignNextValueToReference>accountLoopVar</assignNextValueToReference>
+        <collectionReference>User1_Accounts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>What_s_the_Account_Rating</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Accounts</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Find_User_1_s_Accounts</name>
+        <label>Find User 1’s Accounts</label>
+        <locationX>331</locationX>
+        <locationY>121</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Reassign_User1s_Accounts</targetReference>
+        </connector>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>User1.Id</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>User1_Accounts</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Rating</queriedFields>
+        <queriedFields>OwnerId</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_User_1_s_ID</name>
+        <label>Get User 1&apos;s ID</label>
+        <locationX>151</locationX>
+        <locationY>179</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_User_2_s_ID</targetReference>
+        </connector>
+        <filters>
+            <field>Username</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>User1_username</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputReference>User1</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FirstName</queriedFields>
+        <queriedFields>LastName</queriedFields>
+        <queriedFields>Email</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_User_2_s_ID</name>
+        <label>Get User 2&apos;s ID</label>
+        <locationX>144</locationX>
+        <locationY>329</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_User_3_s_ID</targetReference>
+        </connector>
+        <filters>
+            <field>Username</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>User2_username</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputReference>User2</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FirstName</queriedFields>
+        <queriedFields>LastName</queriedFields>
+        <queriedFields>Email</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_User_3_s_ID</name>
+        <label>Get User 3&apos;s ID</label>
+        <locationX>148</locationX>
+        <locationY>478</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Find_User_1_s_Accounts</targetReference>
+        </connector>
+        <filters>
+            <field>Username</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>User3_username</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputReference>User3</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>FirstName</queriedFields>
+        <queriedFields>LastName</queriedFields>
+        <queriedFields>Email</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Accounts</name>
+        <label>Update Accounts</label>
+        <locationX>531</locationX>
+        <locationY>620</locationY>
+        <connector>
+            <targetReference>Confirmation</targetReference>
+        </connector>
+        <inputReference>coll_updatedAccts</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Collect_Usernames</name>
+        <label>Collect Usernames</label>
+        <locationX>151</locationX>
+        <locationY>50</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Get_User_1_s_ID</targetReference>
+        </connector>
+        <fields>
+            <name>EnterUsernames</name>
+            <fieldText>So you need to reassign some accounts?
+
+No problem! First, we need the username of the person who&apos;s moving on to a new role.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>User1_username</name>
+            <dataType>String</dataType>
+            <fieldText>User whose accounts need to be reassigned</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>other_usernames</name>
+            <fieldText>Then we need the usernames of the people we want to give the accounts to.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>User2_username</name>
+            <dataType>String</dataType>
+            <fieldText>Assign hot accounts to</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>User3_username</name>
+            <dataType>String</dataType>
+            <fieldText>Assign other accounts to</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+    <screens>
+        <name>Confirmation</name>
+        <label>Confirmation</label>
+        <locationX>538</locationX>
+        <locationY>786</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Send_New_Account_Notification</targetReference>
+        </connector>
+        <fields>
+            <name>ReassignMessage</name>
+            <fieldText>All of {!User1.FirstName} {!User1.LastName}&apos;s accounts have been reassigned.
+
+The Hot accounts are now owned by {!User2.FirstName} {!User2.LastName}, and the other accounts are now owned by {!User3.FirstName} {!User3.LastName}.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Collect_Usernames</startElementReference>
+    <textTemplates>
+        <description>Email notification to the new owners of hot, warm, and cold accounts</description>
+        <name>NewAccountEmail</name>
+        <text>Hello {!User2.FirstName} and {!User3.FirstName},
+
+Your account assignments were recently updated. Please log in to Salesforce to check your new accounts. Thank you!</text>
+    </textTemplates>
+    <variables>
+        <description>Stores an account record during one loop iteration</description>
+        <name>accountLoopVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <description>Stores updated account records as the loop iterates</description>
+        <name>coll_updatedAccts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <description>Stores the name, ID, and email address of the employee who’s moving on to the new role</description>
+        <name>User1</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+    <variables>
+        <description>Stores the account’s ID, rating (hot, warm, or cold), and owner ID</description>
+        <name>User1_Accounts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <description>Stores the name, ID, and email address of the employee who’s being assigned the hot accounts</description>
+        <name>User2</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+    <variables>
+        <description>Stores the name, ID, and email address of the employee who’s being assigned the warm and cold accounts</description>
+        <name>User3</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>User</objectType>
+    </variables>
+</Flow>

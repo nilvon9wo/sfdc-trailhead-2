@@ -42,6 +42,7 @@
     <fields>
         <fullName>Brand__c</fullName>
         <description>Brand</description>
+        <encrypted>false</encrypted>
         <externalDeveloperName>Brand</externalDeveloperName>
         <externalId>false</externalId>
         <isFilteringDisabled>false</isFilteringDisabled>
@@ -56,6 +57,7 @@
     <fields>
         <fullName>ID__c</fullName>
         <description>ID</description>
+        <encrypted>false</encrypted>
         <externalDeveloperName>ID</externalDeveloperName>
         <externalId>false</externalId>
         <isFilteringDisabled>false</isFilteringDisabled>
@@ -70,6 +72,7 @@
     <fields>
         <fullName>PhoneNumber__c</fullName>
         <description>PhoneNumber</description>
+        <encrypted>false</encrypted>
         <externalDeveloperName>PhoneNumber</externalDeveloperName>
         <externalId>false</externalId>
         <isFilteringDisabled>false</isFilteringDisabled>
@@ -84,6 +87,7 @@
     <fields>
         <fullName>UUID__c</fullName>
         <description>UUID</description>
+        <encrypted>false</encrypted>
         <externalDeveloperName>UUID</externalDeveloperName>
         <externalId>false</externalId>
         <isFilteringDisabled>false</isFilteringDisabled>

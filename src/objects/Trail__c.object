@@ -54,6 +54,7 @@
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Description__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Description</label>
         <length>32768</length>
@@ -76,6 +77,7 @@
     </fields>
     <fields>
         <fullName>Last_Inspection_Date__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Last Inspection Date</label>
         <required>false</required>

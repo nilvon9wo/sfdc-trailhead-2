@@ -2717,6 +2717,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>Reassign_Account_Ownership</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>SF1_AccountQuckCreate</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -2883,6 +2887,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Quick_Account</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Reassign_Accounts</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>

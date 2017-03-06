@@ -56,6 +56,7 @@
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Name__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Name</label>
         <length>50</length>
@@ -122,6 +123,7 @@
     </fields>
     <fields>
         <fullName>Social_Security_Number__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Social Security Number</label>
         <length>11</length>

@@ -88,6 +88,7 @@
     </fields>
     <fields>
         <fullName>Name__c</fullName>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Name</label>
         <length>50</length>

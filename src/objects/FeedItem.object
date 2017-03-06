@@ -13,4 +13,16 @@
         <type>Default</type>
     </actionOverrides>
     <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Body</fullName>
+        <encrypted>false</encrypted>
+    </fields>
+    <fields>
+        <fullName>RawBody</fullName>
+        <encrypted>false</encrypted>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <encrypted>false</encrypted>
+    </fields>
 </CustomObject>
